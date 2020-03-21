@@ -72,7 +72,7 @@ Partial Class Accueil
         'cmd_quitter
         '
         Me.cmd_quitter.BackColor = System.Drawing.Color.IndianRed
-        Me.cmd_quitter.Location = New System.Drawing.Point(378, 288)
+        Me.cmd_quitter.Location = New System.Drawing.Point(372, 288)
         Me.cmd_quitter.Name = "cmd_quitter"
         Me.cmd_quitter.Size = New System.Drawing.Size(170, 143)
         Me.cmd_quitter.TabIndex = 4
