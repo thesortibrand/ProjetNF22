@@ -27,6 +27,7 @@ Partial Class Accueil
         Me.lbl_niveau = New System.Windows.Forms.Label()
         Me.cmd_start = New System.Windows.Forms.Button()
         Me.cmd_quitter = New System.Windows.Forms.Button()
+        Me.lbl_explicationtest = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'Label1
@@ -42,17 +43,17 @@ Partial Class Accueil
         '
         Me.lbl_evaluation.AutoSize = True
         Me.lbl_evaluation.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lbl_evaluation.Location = New System.Drawing.Point(136, 58)
+        Me.lbl_evaluation.Location = New System.Drawing.Point(151, 58)
         Me.lbl_evaluation.Name = "lbl_evaluation"
-        Me.lbl_evaluation.Size = New System.Drawing.Size(368, 55)
+        Me.lbl_evaluation.Size = New System.Drawing.Size(338, 55)
         Me.lbl_evaluation.TabIndex = 1
-        Me.lbl_evaluation.Text = "EVALUTATION"
+        Me.lbl_evaluation.Text = "EVALUATION"
         '
         'lbl_niveau
         '
         Me.lbl_niveau.AutoSize = True
         Me.lbl_niveau.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lbl_niveau.Location = New System.Drawing.Point(176, 122)
+        Me.lbl_niveau.Location = New System.Drawing.Point(188, 122)
         Me.lbl_niveau.Name = "lbl_niveau"
         Me.lbl_niveau.Size = New System.Drawing.Size(281, 55)
         Me.lbl_niveau.TabIndex = 2
@@ -71,18 +72,31 @@ Partial Class Accueil
         'cmd_quitter
         '
         Me.cmd_quitter.BackColor = System.Drawing.Color.IndianRed
-        Me.cmd_quitter.Location = New System.Drawing.Point(414, 288)
+        Me.cmd_quitter.Location = New System.Drawing.Point(378, 288)
         Me.cmd_quitter.Name = "cmd_quitter"
         Me.cmd_quitter.Size = New System.Drawing.Size(170, 143)
         Me.cmd_quitter.TabIndex = 4
         Me.cmd_quitter.Text = "Quitter l'évaluation"
         Me.cmd_quitter.UseVisualStyleBackColor = False
         '
+        'lbl_explicationtest
+        '
+        Me.lbl_explicationtest.AutoSize = True
+        Me.lbl_explicationtest.Location = New System.Drawing.Point(66, 198)
+        Me.lbl_explicationtest.Name = "lbl_explicationtest"
+        Me.lbl_explicationtest.RightToLeft = System.Windows.Forms.RightToLeft.No
+        Me.lbl_explicationtest.Size = New System.Drawing.Size(553, 50)
+        Me.lbl_explicationtest.TabIndex = 5
+        Me.lbl_explicationtest.Text = "Cette évaluation comprend 10 questions : " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "5 questions de français et 5 questions" &
+    " de mathématique."
+        Me.lbl_explicationtest.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
         'Accueil
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(12.0!, 25.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(703, 553)
+        Me.ClientSize = New System.Drawing.Size(674, 553)
+        Me.Controls.Add(Me.lbl_explicationtest)
         Me.Controls.Add(Me.cmd_quitter)
         Me.Controls.Add(Me.cmd_start)
         Me.Controls.Add(Me.lbl_niveau)
@@ -101,4 +115,5 @@ Partial Class Accueil
     Friend WithEvents lbl_niveau As Label
     Friend WithEvents cmd_start As Button
     Friend WithEvents cmd_quitter As Button
+    Friend WithEvents lbl_explicationtest As Label
 End Class

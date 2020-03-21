@@ -7,4 +7,12 @@
         Question1.Show()
         Me.Hide()
     End Sub
+
+    Private Sub RichTextBox1_TextChanged(sender As Object, e As EventArgs)
+
+    End Sub
+
+    Private Sub Label2_Click(sender As Object, e As EventArgs) Handles lbl_explicationtest.Click
+
+    End Sub
 End Class
