@@ -118,6 +118,7 @@ Partial Class Question4
         Me.DateTimePicker.Name = "DateTimePicker"
         Me.DateTimePicker.Size = New System.Drawing.Size(370, 31)
         Me.DateTimePicker.TabIndex = 11
+        Me.DateTimePicker.Value = New Date(2020, 3, 23, 0, 0, 0, 0)
         '
         'Question4
         '
