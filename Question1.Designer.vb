@@ -25,8 +25,6 @@ Partial Class Question1
         Me.lblQ1 = New System.Windows.Forms.Label()
         Me.lbl_Francais = New System.Windows.Forms.Label()
         Me.lbl_NumQ = New System.Windows.Forms.Label()
-        Me.cmd_next = New System.Windows.Forms.Button()
-        Me.cmd_back = New System.Windows.Forms.Button()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.lbl_consigne = New System.Windows.Forms.Label()
         Me.rep1 = New System.Windows.Forms.RadioButton()
@@ -34,6 +32,8 @@ Partial Class Question1
         Me.rep3 = New System.Windows.Forms.RadioButton()
         Me.rep4 = New System.Windows.Forms.RadioButton()
         Me.lbl_coq = New System.Windows.Forms.Label()
+        Me.cmd_next = New System.Windows.Forms.Button()
+        Me.cmd_back = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'lblQ1
@@ -67,34 +67,6 @@ Partial Class Question1
         Me.lbl_NumQ.Size = New System.Drawing.Size(56, 27)
         Me.lbl_NumQ.TabIndex = 2
         Me.lbl_NumQ.Text = "1/10"
-        '
-        'cmd_next
-        '
-        Me.cmd_next.BackColor = System.Drawing.Color.White
-        Me.cmd_next.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.875!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.cmd_next.Image = Global.ProjetNF22.My.Resources.Resources.right_arrow
-        Me.cmd_next.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.cmd_next.Location = New System.Drawing.Point(687, 348)
-        Me.cmd_next.Name = "cmd_next"
-        Me.cmd_next.Size = New System.Drawing.Size(101, 93)
-        Me.cmd_next.TabIndex = 4
-        Me.cmd_next.Text = "Suivant"
-        Me.cmd_next.TextAlign = System.Drawing.ContentAlignment.BottomCenter
-        Me.cmd_next.UseVisualStyleBackColor = False
-        '
-        'cmd_back
-        '
-        Me.cmd_back.BackColor = System.Drawing.Color.White
-        Me.cmd_back.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.875!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.cmd_back.Image = Global.ProjetNF22.My.Resources.Resources.left_arrow2
-        Me.cmd_back.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.cmd_back.Location = New System.Drawing.Point(12, 348)
-        Me.cmd_back.Name = "cmd_back"
-        Me.cmd_back.Size = New System.Drawing.Size(101, 93)
-        Me.cmd_back.TabIndex = 3
-        Me.cmd_back.Text = "Retour"
-        Me.cmd_back.TextAlign = System.Drawing.ContentAlignment.BottomCenter
-        Me.cmd_back.UseVisualStyleBackColor = False
         '
         'Label1
         '
@@ -166,6 +138,34 @@ Partial Class Question1
         Me.lbl_coq.Size = New System.Drawing.Size(102, 25)
         Me.lbl_coq.TabIndex = 11
         Me.lbl_coq.Text = "un coq ->"
+        '
+        'cmd_next
+        '
+        Me.cmd_next.BackColor = System.Drawing.Color.White
+        Me.cmd_next.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.875!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.cmd_next.Image = Global.ProjetNF22.My.Resources.Resources.right_arrow
+        Me.cmd_next.ImageAlign = System.Drawing.ContentAlignment.TopCenter
+        Me.cmd_next.Location = New System.Drawing.Point(687, 348)
+        Me.cmd_next.Name = "cmd_next"
+        Me.cmd_next.Size = New System.Drawing.Size(101, 93)
+        Me.cmd_next.TabIndex = 4
+        Me.cmd_next.Text = "Suivant"
+        Me.cmd_next.TextAlign = System.Drawing.ContentAlignment.BottomCenter
+        Me.cmd_next.UseVisualStyleBackColor = False
+        '
+        'cmd_back
+        '
+        Me.cmd_back.BackColor = System.Drawing.Color.White
+        Me.cmd_back.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.875!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.cmd_back.Image = Global.ProjetNF22.My.Resources.Resources.left_arrow2
+        Me.cmd_back.ImageAlign = System.Drawing.ContentAlignment.TopCenter
+        Me.cmd_back.Location = New System.Drawing.Point(12, 348)
+        Me.cmd_back.Name = "cmd_back"
+        Me.cmd_back.Size = New System.Drawing.Size(101, 93)
+        Me.cmd_back.TabIndex = 3
+        Me.cmd_back.Text = "Retour"
+        Me.cmd_back.TextAlign = System.Drawing.ContentAlignment.BottomCenter
+        Me.cmd_back.UseVisualStyleBackColor = False
         '
         'Question1
         '

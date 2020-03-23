@@ -7,15 +7,18 @@
     End Sub
 
     Private Sub cmd_next_Click(sender As Object, e As EventArgs) Handles cmd_next.Click
-        n = 0
-        If i = 2 Then
-            n = n + 1
+        If rep1.Checked = False And rep2.Checked = False And rep3.Checked = False And rep4.Checked = False Then
+            MsgBox("Aucune réponse n'a été selectionnée")
         Else
-            n = n
+            n = 0
+            If i = 2 Then
+                n = n + 1
+            Else
+                n = n
+            End If
+            Question2.Show()
+            Me.Hide()
         End If
-
-        Question2.Show()
-        Me.Hide()
     End Sub
 
     Private Sub rep1_CheckedChanged(sender As Object, e As EventArgs) Handles rep1.CheckedChanged
