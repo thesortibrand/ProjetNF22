@@ -6,12 +6,11 @@
 
     Private Sub cmd_next_Click(sender As Object, e As EventArgs) Handles cmd_next.Click
         If DateTimePicker.Value = "10 / 03 / 2020" Then
-            n = n + 1
+            n_ope = n_ope + 1
         Else
-            n = n
+            n_ope = n_ope
         End If
         Question5.Show()
         Me.Hide()
     End Sub
-
 End Class

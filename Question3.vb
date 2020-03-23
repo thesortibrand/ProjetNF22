@@ -9,9 +9,9 @@
             MsgBox("Aucune réponse n'a été selectionnée")
         Else
             If rep.SelectedIndex = 1 Then
-                n = n + 1
+                n_gram = n_gram + 1
             Else
-                n = n
+                n_gram = n_gram
             End If
             Question4.Show()
             Me.Hide()

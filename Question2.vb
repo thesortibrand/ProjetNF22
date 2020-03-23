@@ -7,9 +7,9 @@
     Private Sub cmd_next_Click(sender As Object, e As EventArgs) Handles cmd_next.Click
         If rep.SelectedItem <> "" Then
             If rep.SelectedIndex = 1 Then
-                n = n + 1
+                n_ope = n_ope + 1
             Else
-                n = n
+                n_ope = n_ope
             End If
             Question3.Show()
             Me.Hide()

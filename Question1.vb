@@ -10,11 +10,16 @@
         If rep1.Checked = False And rep2.Checked = False And rep3.Checked = False And rep4.Checked = False Then
             MsgBox("Aucune réponse n'a été selectionnée")
         Else
-            n = 0
+            'initiliasation des variables bonnes réponses
+            n_voc = 0
+            n_gram = 0
+            n_ope = 0
+            n_lec = 0
+
             If i = 2 Then
-                n = n + 1
+                n_voc = n_voc + 1
             Else
-                n = n
+                n_voc = n_voc
             End If
             Question2.Show()
             Me.Hide()

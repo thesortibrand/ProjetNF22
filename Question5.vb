@@ -9,9 +9,9 @@
             MsgBox("Aucune réponse n'a été rentrée")
         Else
             If TextBox.Text = "chevaux" Then
-                n = n + 1
+                n_voc = n_voc + 1
             Else
-                n = n
+                n_voc = n_voc
             End If
             Question6.Show()
             Me.Hide()
