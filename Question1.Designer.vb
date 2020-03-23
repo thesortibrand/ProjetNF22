@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class Question1
     Inherits System.Windows.Forms.Form
 
     'Form remplace la méthode Dispose pour nettoyer la liste des composants.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,7 +20,7 @@ Partial Class Question1
     'REMARQUE : la procédure suivante est requise par le Concepteur Windows Form
     'Elle peut être modifiée à l'aide du Concepteur Windows Form.  
     'Ne la modifiez pas à l'aide de l'éditeur de code.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.lblQ1 = New System.Windows.Forms.Label()
         Me.lbl_Francais = New System.Windows.Forms.Label()
@@ -29,8 +29,11 @@ Partial Class Question1
         Me.cmd_back = New System.Windows.Forms.Button()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.lbl_consigne = New System.Windows.Forms.Label()
-        Me.lbl_vous = New System.Windows.Forms.Label()
-        Me.txtBox_repQ1 = New System.Windows.Forms.TextBox()
+        Me.rep1 = New System.Windows.Forms.RadioButton()
+        Me.rep2 = New System.Windows.Forms.RadioButton()
+        Me.rep3 = New System.Windows.Forms.RadioButton()
+        Me.rep4 = New System.Windows.Forms.RadioButton()
+        Me.lbl_coq = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'lblQ1
@@ -104,29 +107,65 @@ Partial Class Question1
         'lbl_consigne
         '
         Me.lbl_consigne.AutoSize = True
-        Me.lbl_consigne.Location = New System.Drawing.Point(39, 113)
+        Me.lbl_consigne.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.125!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbl_consigne.Location = New System.Drawing.Point(41, 91)
         Me.lbl_consigne.Name = "lbl_consigne"
-        Me.lbl_consigne.Size = New System.Drawing.Size(549, 25)
+        Me.lbl_consigne.Size = New System.Drawing.Size(347, 31)
         Me.lbl_consigne.TabIndex = 6
-        Me.lbl_consigne.Text = "Conjuguez le verbe ""voir"" au pronom personnel suivant :"
+        Me.lbl_consigne.Text = "Quel est le féminin du coq ?"
         '
-        'lbl_vous
+        'rep1
         '
-        Me.lbl_vous.AutoSize = True
-        Me.lbl_vous.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lbl_vous.Location = New System.Drawing.Point(123, 199)
-        Me.lbl_vous.Name = "lbl_vous"
-        Me.lbl_vous.Size = New System.Drawing.Size(91, 37)
-        Me.lbl_vous.TabIndex = 7
-        Me.lbl_vous.Text = "Vous"
+        Me.rep1.AutoSize = True
+        Me.rep1.Location = New System.Drawing.Point(268, 148)
+        Me.rep1.Name = "rep1"
+        Me.rep1.Size = New System.Drawing.Size(144, 29)
+        Me.rep1.TabIndex = 7
+        Me.rep1.TabStop = True
+        Me.rep1.Text = "une coque"
+        Me.rep1.UseVisualStyleBackColor = True
         '
-        'txtBox_repQ1
+        'rep2
         '
-        Me.txtBox_repQ1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtBox_repQ1.Location = New System.Drawing.Point(220, 196)
-        Me.txtBox_repQ1.Name = "txtBox_repQ1"
-        Me.txtBox_repQ1.Size = New System.Drawing.Size(289, 44)
-        Me.txtBox_repQ1.TabIndex = 8
+        Me.rep2.AutoSize = True
+        Me.rep2.Location = New System.Drawing.Point(268, 183)
+        Me.rep2.Name = "rep2"
+        Me.rep2.Size = New System.Drawing.Size(138, 29)
+        Me.rep2.TabIndex = 8
+        Me.rep2.TabStop = True
+        Me.rep2.Text = "une poule"
+        Me.rep2.UseVisualStyleBackColor = True
+        '
+        'rep3
+        '
+        Me.rep3.AutoSize = True
+        Me.rep3.Location = New System.Drawing.Point(268, 218)
+        Me.rep3.Name = "rep3"
+        Me.rep3.Size = New System.Drawing.Size(120, 29)
+        Me.rep3.TabIndex = 9
+        Me.rep3.TabStop = True
+        Me.rep3.Text = "une coq"
+        Me.rep3.UseVisualStyleBackColor = True
+        '
+        'rep4
+        '
+        Me.rep4.AutoSize = True
+        Me.rep4.Location = New System.Drawing.Point(268, 253)
+        Me.rep4.Name = "rep4"
+        Me.rep4.Size = New System.Drawing.Size(156, 29)
+        Me.rep4.TabIndex = 10
+        Me.rep4.TabStop = True
+        Me.rep4.Text = "une canette"
+        Me.rep4.UseVisualStyleBackColor = True
+        '
+        'lbl_coq
+        '
+        Me.lbl_coq.AutoSize = True
+        Me.lbl_coq.Location = New System.Drawing.Point(144, 148)
+        Me.lbl_coq.Name = "lbl_coq"
+        Me.lbl_coq.Size = New System.Drawing.Size(102, 25)
+        Me.lbl_coq.TabIndex = 11
+        Me.lbl_coq.Text = "un coq ->"
         '
         'Question1
         '
@@ -134,8 +173,11 @@ Partial Class Question1
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.GradientActiveCaption
         Me.ClientSize = New System.Drawing.Size(800, 450)
-        Me.Controls.Add(Me.txtBox_repQ1)
-        Me.Controls.Add(Me.lbl_vous)
+        Me.Controls.Add(Me.lbl_coq)
+        Me.Controls.Add(Me.rep4)
+        Me.Controls.Add(Me.rep3)
+        Me.Controls.Add(Me.rep2)
+        Me.Controls.Add(Me.rep1)
         Me.Controls.Add(Me.lbl_consigne)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.cmd_next)
@@ -157,6 +199,9 @@ Partial Class Question1
     Friend WithEvents cmd_next As Button
     Friend WithEvents Label1 As Label
     Friend WithEvents lbl_consigne As Label
-    Friend WithEvents lbl_vous As Label
-    Friend WithEvents txtBox_repQ1 As TextBox
+    Friend WithEvents rep1 As RadioButton
+    Friend WithEvents rep2 As RadioButton
+    Friend WithEvents rep3 As RadioButton
+    Friend WithEvents rep4 As RadioButton
+    Friend WithEvents lbl_coq As Label
 End Class
