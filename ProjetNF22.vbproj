@@ -176,6 +176,9 @@
     <EmbeddedResource Include="Question1.resx">
       <DependentUpon>Question1.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Question10.resx">
+      <DependentUpon>Question10.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Question2.resx">
       <DependentUpon>Question2.vb</DependentUpon>
     </EmbeddedResource>
@@ -187,6 +190,21 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Question5.resx">
       <DependentUpon>Question5.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Question6.resx">
+      <DependentUpon>Question6.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Question7.resx">
+      <DependentUpon>Question7.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Question8.resx">
+      <DependentUpon>Question8.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Question9.resx">
+      <DependentUpon>Question9.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resultat.resx">
+      <DependentUpon>Resultat.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
