@@ -26,6 +26,7 @@ Partial Class Resultat
         Me.txtbox_score = New System.Windows.Forms.TextBox()
         Me.lbl_10 = New System.Windows.Forms.Label()
         Me.groupbox_categories = New System.Windows.Forms.GroupBox()
+        Me.lbl_lec = New System.Windows.Forms.Label()
         Me.txtbox_ponc = New System.Windows.Forms.TextBox()
         Me.lbl_ponct = New System.Windows.Forms.Label()
         Me.lbl_français = New System.Windows.Forms.Label()
@@ -39,7 +40,6 @@ Partial Class Resultat
         Me.lbl_gram = New System.Windows.Forms.Label()
         Me.Label9 = New System.Windows.Forms.Label()
         Me.listbox_conseils = New System.Windows.Forms.ListBox()
-        Me.lbl_lec = New System.Windows.Forms.Label()
         Me.cmd_Quitter = New System.Windows.Forms.Button()
         Me.groupbox_categories.SuspendLayout()
         Me.SuspendLayout()
@@ -56,10 +56,12 @@ Partial Class Resultat
         '
         'txtbox_score
         '
+        Me.txtbox_score.Enabled = False
         Me.txtbox_score.Location = New System.Drawing.Point(77, 53)
         Me.txtbox_score.Name = "txtbox_score"
         Me.txtbox_score.Size = New System.Drawing.Size(100, 22)
         Me.txtbox_score.TabIndex = 1
+        Me.txtbox_score.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'lbl_10
         '
@@ -91,12 +93,23 @@ Partial Class Resultat
         Me.groupbox_categories.TabStop = False
         Me.groupbox_categories.Text = "% par Categorie"
         '
+        'lbl_lec
+        '
+        Me.lbl_lec.AutoSize = True
+        Me.lbl_lec.Location = New System.Drawing.Point(24, 271)
+        Me.lbl_lec.Name = "lbl_lec"
+        Me.lbl_lec.Size = New System.Drawing.Size(99, 17)
+        Me.lbl_lec.TabIndex = 11
+        Me.lbl_lec.Text = "Lecture Heure"
+        '
         'txtbox_ponc
         '
+        Me.txtbox_ponc.Enabled = False
         Me.txtbox_ponc.Location = New System.Drawing.Point(134, 154)
         Me.txtbox_ponc.Name = "txtbox_ponc"
         Me.txtbox_ponc.Size = New System.Drawing.Size(55, 22)
         Me.txtbox_ponc.TabIndex = 10
+        Me.txtbox_ponc.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'lbl_ponct
         '
@@ -119,31 +132,39 @@ Partial Class Resultat
         '
         'txtbox_lec
         '
+        Me.txtbox_lec.Enabled = False
         Me.txtbox_lec.Location = New System.Drawing.Point(134, 271)
         Me.txtbox_lec.Name = "txtbox_lec"
         Me.txtbox_lec.Size = New System.Drawing.Size(55, 22)
         Me.txtbox_lec.TabIndex = 7
+        Me.txtbox_lec.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'txtbox_ari
         '
+        Me.txtbox_ari.Enabled = False
         Me.txtbox_ari.Location = New System.Drawing.Point(134, 232)
         Me.txtbox_ari.Name = "txtbox_ari"
         Me.txtbox_ari.Size = New System.Drawing.Size(55, 22)
         Me.txtbox_ari.TabIndex = 6
+        Me.txtbox_ari.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'txtbox_voc
         '
+        Me.txtbox_voc.Enabled = False
         Me.txtbox_voc.Location = New System.Drawing.Point(134, 113)
         Me.txtbox_voc.Name = "txtbox_voc"
         Me.txtbox_voc.Size = New System.Drawing.Size(55, 22)
         Me.txtbox_voc.TabIndex = 5
+        Me.txtbox_voc.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'txtbox_gram
         '
+        Me.txtbox_gram.Enabled = False
         Me.txtbox_gram.Location = New System.Drawing.Point(134, 71)
         Me.txtbox_gram.Name = "txtbox_gram"
         Me.txtbox_gram.Size = New System.Drawing.Size(55, 22)
         Me.txtbox_gram.TabIndex = 4
+        Me.txtbox_gram.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'lbl_ari
         '
@@ -194,21 +215,13 @@ Partial Class Resultat
         '
         'listbox_conseils
         '
+        Me.listbox_conseils.Enabled = False
         Me.listbox_conseils.FormattingEnabled = True
         Me.listbox_conseils.ItemHeight = 16
         Me.listbox_conseils.Location = New System.Drawing.Point(423, 103)
         Me.listbox_conseils.Name = "listbox_conseils"
         Me.listbox_conseils.Size = New System.Drawing.Size(217, 324)
         Me.listbox_conseils.TabIndex = 7
-        '
-        'lbl_lec
-        '
-        Me.lbl_lec.AutoSize = True
-        Me.lbl_lec.Location = New System.Drawing.Point(24, 271)
-        Me.lbl_lec.Name = "lbl_lec"
-        Me.lbl_lec.Size = New System.Drawing.Size(99, 17)
-        Me.lbl_lec.TabIndex = 11
-        Me.lbl_lec.Text = "Lecture Heure"
         '
         'cmd_Quitter
         '

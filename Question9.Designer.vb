@@ -22,16 +22,32 @@ Partial Class Question9
     'Ne la modifiez pas à l'aide de l'éditeur de code.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Me.lblQ9 = New System.Windows.Forms.Label()
         Me.SuspendLayout()
+        '
+        'lblQ9
+        '
+        Me.lblQ9.AutoSize = True
+        Me.lblQ9.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblQ9.Location = New System.Drawing.Point(46, 31)
+        Me.lblQ9.Name = "lblQ9"
+        Me.lblQ9.Size = New System.Drawing.Size(139, 29)
+        Me.lblQ9.TabIndex = 1
+        Me.lblQ9.Text = "Question 9"
         '
         'Question9
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.SystemColors.GradientActiveCaption
         Me.ClientSize = New System.Drawing.Size(533, 288)
+        Me.Controls.Add(Me.lblQ9)
         Me.Name = "Question9"
         Me.Text = "Question 9"
         Me.ResumeLayout(False)
+        Me.PerformLayout()
 
     End Sub
+
+    Friend WithEvents lblQ9 As Label
 End Class

@@ -3,7 +3,7 @@
         txtbox_score.Text = n_ari + n_gram + n_lec + n_ponc + n_voc
 
         txtbox_ari.Text = ((n_ari / 4) * 100) & " %"
-        txtbox_gram.Text = ((n_ari / 2) * 100) & " %"
+        txtbox_gram.Text = ((n_gram / 2) * 100) & " %"
         txtbox_voc.Text = ((n_voc / 2) * 100) & " %"
         txtbox_ponc.Text = ((n_ponc / 1) * 100) & " %"
         txtbox_lec.Text = ((n_lec / 1) * 100) & " %"

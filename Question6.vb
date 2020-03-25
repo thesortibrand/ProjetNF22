@@ -31,9 +31,9 @@
             Panel_reponse.SendToBack()
             lbl_heure.SendToBack()
 
-            If sender.Location.Y >= Panel_reponse.Location.Y And sender.Location.Y <= Panel_reponse.Location.Y + Panel_reponse.Height Or
-               sender.Location.Y + sender.Height() >= Panel_reponse.Location.Y And sender.Location.Y + sender.Height() <= Panel_reponse.Location.Y + Panel_reponse.Height And
-               sender.Location.X >= Panel_reponse.Location.X And sender.Location.X <= Panel_reponse.Location.X + Panel_reponse.Width Then
+            If sender.Location.Y >= Panel_reponse.Location.Y And sender.Location.Y <= Panel_reponse.Location.Y + Panel_reponse.Height() Or
+               sender.Location.Y + sender.Height() >= Panel_reponse.Location.Y And sender.Location.Y + sender.Height() <= Panel_reponse.Location.Y + Panel_reponse.Height() And
+               sender.Location.X >= Panel_reponse.Location.X And sender.Location.X <= Panel_reponse.Location.X + Panel_reponse.Width() Then
 
                 Panel_reponse.BackgroundImage = sender.Image
 
@@ -64,7 +64,7 @@
             If Panel_reponse.BackgroundImage Is pb_horloge2.Image Then
                 n_lec += 1
             End If
-            Resultat.Show()
+            Question7.Show()
             Me.Hide()
         End If
     End Sub
