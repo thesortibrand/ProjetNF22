@@ -234,5 +234,14 @@
   <ItemGroup>
     <None Include="Resources\exit.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2pommes.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3pommes.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4pommes.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>
