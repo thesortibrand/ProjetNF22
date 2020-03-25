@@ -217,7 +217,7 @@ Partial Class Resultat
         Me.cmd_Quitter.Name = "cmd_Quitter"
         Me.cmd_Quitter.Size = New System.Drawing.Size(128, 38)
         Me.cmd_Quitter.TabIndex = 8
-        Me.cmd_Quitter.Text = "Terminer"
+        Me.cmd_Quitter.Text = "Terminer "
         Me.cmd_Quitter.UseVisualStyleBackColor = True
         '
         'Resultat
