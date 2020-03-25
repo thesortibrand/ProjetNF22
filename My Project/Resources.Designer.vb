@@ -73,9 +73,19 @@ Namespace My.Resources
         '''<summary>
         '''  Recherche une ressource localisée de type System.Drawing.Bitmap.
         '''</summary>
-        Friend ReadOnly Property exit1() As System.Drawing.Bitmap
+        Friend ReadOnly Property heure1() As System.Drawing.Bitmap
             Get
-                Dim obj As Object = ResourceManager.GetObject("exit1", resourceCulture)
+                Dim obj As Object = ResourceManager.GetObject("heure1", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Recherche une ressource localisée de type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property heure2() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("heure2", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property
@@ -86,26 +96,6 @@ Namespace My.Resources
         Friend ReadOnly Property left_arrow() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("left-arrow", resourceCulture)
-                Return CType(obj,System.Drawing.Bitmap)
-            End Get
-        End Property
-        
-        '''<summary>
-        '''  Recherche une ressource localisée de type System.Drawing.Bitmap.
-        '''</summary>
-        Friend ReadOnly Property left_arrow1() As System.Drawing.Bitmap
-            Get
-                Dim obj As Object = ResourceManager.GetObject("left-arrow1", resourceCulture)
-                Return CType(obj,System.Drawing.Bitmap)
-            End Get
-        End Property
-        
-        '''<summary>
-        '''  Recherche une ressource localisée de type System.Drawing.Bitmap.
-        '''</summary>
-        Friend ReadOnly Property left_arrow2() As System.Drawing.Bitmap
-            Get
-                Dim obj As Object = ResourceManager.GetObject("left-arrow2", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property

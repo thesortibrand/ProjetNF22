@@ -22,9 +22,16 @@ Partial Class Question8
     'Ne la modifiez pas à l'aide de l'éditeur de code.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        components = New System.ComponentModel.Container
+        Me.SuspendLayout()
+        '
+        'Question8
+        '
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(800, 450)
-        Me.Text = "Question8"
+        Me.ClientSize = New System.Drawing.Size(533, 288)
+        Me.Name = "Question8"
+        Me.Text = "Question 8"
+        Me.ResumeLayout(False)
+
     End Sub
 End Class

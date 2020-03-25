@@ -22,6 +22,7 @@ Partial Class Question2
     'Ne la modifiez pas à l'aide de l'éditeur de code.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
         Me.lblQ2 = New System.Windows.Forms.Label()
         Me.lbl_NumQ = New System.Windows.Forms.Label()
         Me.cmd_back = New System.Windows.Forms.Button()
@@ -30,6 +31,10 @@ Partial Class Question2
         Me.lbl_consigne = New System.Windows.Forms.Label()
         Me.lbl_calcul = New System.Windows.Forms.Label()
         Me.rep = New System.Windows.Forms.ListBox()
+        Me.TimerQ2 = New System.Windows.Forms.Timer(Me.components)
+        Me.lbl_min = New System.Windows.Forms.Label()
+        Me.lbl_2points = New System.Windows.Forms.Label()
+        Me.lbl_sec = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'lblQ2
@@ -37,33 +42,35 @@ Partial Class Question2
         Me.lblQ2.AutoSize = True
         Me.lblQ2.BackColor = System.Drawing.Color.Transparent
         Me.lblQ2.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.875!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblQ2.Location = New System.Drawing.Point(36, 38)
+        Me.lblQ2.Location = New System.Drawing.Point(24, 24)
+        Me.lblQ2.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.lblQ2.Name = "lblQ2"
-        Me.lblQ2.Size = New System.Drawing.Size(209, 42)
-        Me.lblQ2.TabIndex = 1
+        Me.lblQ2.Size = New System.Drawing.Size(139, 29)
+        Me.lblQ2.TabIndex = 0
         Me.lblQ2.Text = "Question 2"
         '
         'lbl_NumQ
         '
         Me.lbl_NumQ.AutoSize = True
         Me.lbl_NumQ.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lbl_NumQ.Location = New System.Drawing.Point(732, 9)
+        Me.lbl_NumQ.Location = New System.Drawing.Point(488, 6)
+        Me.lbl_NumQ.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.lbl_NumQ.Name = "lbl_NumQ"
-        Me.lbl_NumQ.Size = New System.Drawing.Size(56, 27)
-        Me.lbl_NumQ.TabIndex = 3
+        Me.lbl_NumQ.Size = New System.Drawing.Size(38, 19)
+        Me.lbl_NumQ.TabIndex = 10
         Me.lbl_NumQ.Text = "2/10"
         '
         'cmd_back
         '
         Me.cmd_back.BackColor = System.Drawing.Color.White
         Me.cmd_back.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.875!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.cmd_back.Image = Global.ProjetNF22.My.Resources.Resources.left_arrow2
+        Me.cmd_back.Image = Global.ProjetNF22.My.Resources.Resources.left_arrow
         Me.cmd_back.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.cmd_back.Location = New System.Drawing.Point(12, 345)
+        Me.cmd_back.Location = New System.Drawing.Point(8, 221)
+        Me.cmd_back.Margin = New System.Windows.Forms.Padding(2)
         Me.cmd_back.Name = "cmd_back"
-        Me.cmd_back.Size = New System.Drawing.Size(101, 93)
-        Me.cmd_back.TabIndex = 4
-        Me.cmd_back.Text = "Retour"
+        Me.cmd_back.Size = New System.Drawing.Size(67, 60)
+        Me.cmd_back.TabIndex = 5
         Me.cmd_back.TextAlign = System.Drawing.ContentAlignment.BottomCenter
         Me.cmd_back.UseVisualStyleBackColor = False
         '
@@ -73,11 +80,11 @@ Partial Class Question2
         Me.cmd_next.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.875!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cmd_next.Image = Global.ProjetNF22.My.Resources.Resources.right_arrow
         Me.cmd_next.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.cmd_next.Location = New System.Drawing.Point(687, 345)
+        Me.cmd_next.Location = New System.Drawing.Point(458, 221)
+        Me.cmd_next.Margin = New System.Windows.Forms.Padding(2)
         Me.cmd_next.Name = "cmd_next"
-        Me.cmd_next.Size = New System.Drawing.Size(101, 93)
-        Me.cmd_next.TabIndex = 5
-        Me.cmd_next.Text = "Suivant"
+        Me.cmd_next.Size = New System.Drawing.Size(67, 60)
+        Me.cmd_next.TabIndex = 4
         Me.cmd_next.TextAlign = System.Drawing.ContentAlignment.BottomCenter
         Me.cmd_next.UseVisualStyleBackColor = False
         '
@@ -86,9 +93,10 @@ Partial Class Question2
         Me.lbl_Francais.AutoSize = True
         Me.lbl_Francais.BackColor = System.Drawing.Color.Transparent
         Me.lbl_Francais.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.125!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lbl_Francais.Location = New System.Drawing.Point(231, 403)
+        Me.lbl_Francais.Location = New System.Drawing.Point(161, 258)
+        Me.lbl_Francais.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.lbl_Francais.Name = "lbl_Francais"
-        Me.lbl_Francais.Size = New System.Drawing.Size(338, 31)
+        Me.lbl_Francais.Size = New System.Drawing.Size(209, 20)
         Me.lbl_Francais.TabIndex = 6
         Me.lbl_Francais.Text = "Question de mathématique"
         '
@@ -96,38 +104,73 @@ Partial Class Question2
         '
         Me.lbl_consigne.AutoSize = True
         Me.lbl_consigne.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.125!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lbl_consigne.Location = New System.Drawing.Point(37, 100)
+        Me.lbl_consigne.Location = New System.Drawing.Point(25, 64)
+        Me.lbl_consigne.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.lbl_consigne.Name = "lbl_consigne"
-        Me.lbl_consigne.Size = New System.Drawing.Size(305, 31)
-        Me.lbl_consigne.TabIndex = 7
+        Me.lbl_consigne.Size = New System.Drawing.Size(189, 20)
+        Me.lbl_consigne.TabIndex = 1
         Me.lbl_consigne.Text = "Choisi la bonne réponse"
         '
         'lbl_calcul
         '
         Me.lbl_calcul.AutoSize = True
         Me.lbl_calcul.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.875!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lbl_calcul.Location = New System.Drawing.Point(295, 180)
+        Me.lbl_calcul.Location = New System.Drawing.Point(197, 115)
+        Me.lbl_calcul.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.lbl_calcul.Name = "lbl_calcul"
-        Me.lbl_calcul.Size = New System.Drawing.Size(111, 33)
-        Me.lbl_calcul.TabIndex = 8
+        Me.lbl_calcul.Size = New System.Drawing.Size(71, 24)
+        Me.lbl_calcul.TabIndex = 2
         Me.lbl_calcul.Text = "9 x 5 = "
         '
         'rep
         '
         Me.rep.FormattingEnabled = True
-        Me.rep.ItemHeight = 25
+        Me.rep.ItemHeight = 16
         Me.rep.Items.AddRange(New Object() {"15", "45", "20", "4", "54", "95", "14"})
-        Me.rep.Location = New System.Drawing.Point(403, 180)
+        Me.rep.Location = New System.Drawing.Point(269, 115)
+        Me.rep.Margin = New System.Windows.Forms.Padding(2)
         Me.rep.Name = "rep"
-        Me.rep.Size = New System.Drawing.Size(120, 129)
-        Me.rep.TabIndex = 10
+        Me.rep.Size = New System.Drawing.Size(81, 84)
+        Me.rep.TabIndex = 3
+        '
+        'TimerQ2
+        '
+        Me.TimerQ2.Interval = 1000
+        '
+        'lbl_min
+        '
+        Me.lbl_min.AutoSize = True
+        Me.lbl_min.Location = New System.Drawing.Point(236, 221)
+        Me.lbl_min.Name = "lbl_min"
+        Me.lbl_min.Size = New System.Drawing.Size(0, 17)
+        Me.lbl_min.TabIndex = 7
+        '
+        'lbl_2points
+        '
+        Me.lbl_2points.AutoSize = True
+        Me.lbl_2points.Location = New System.Drawing.Point(256, 221)
+        Me.lbl_2points.Name = "lbl_2points"
+        Me.lbl_2points.Size = New System.Drawing.Size(12, 17)
+        Me.lbl_2points.TabIndex = 8
+        Me.lbl_2points.Text = ":"
+        '
+        'lbl_sec
+        '
+        Me.lbl_sec.AutoSize = True
+        Me.lbl_sec.Location = New System.Drawing.Point(286, 221)
+        Me.lbl_sec.Name = "lbl_sec"
+        Me.lbl_sec.Size = New System.Drawing.Size(0, 17)
+        Me.lbl_sec.TabIndex = 9
         '
         'Question2
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(12.0!, 25.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.GradientActiveCaption
-        Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.ClientSize = New System.Drawing.Size(533, 288)
+        Me.Controls.Add(Me.lbl_sec)
+        Me.Controls.Add(Me.lbl_2points)
+        Me.Controls.Add(Me.lbl_min)
         Me.Controls.Add(Me.rep)
         Me.Controls.Add(Me.lbl_calcul)
         Me.Controls.Add(Me.lbl_consigne)
@@ -136,6 +179,7 @@ Partial Class Question2
         Me.Controls.Add(Me.cmd_back)
         Me.Controls.Add(Me.lbl_NumQ)
         Me.Controls.Add(Me.lblQ2)
+        Me.Margin = New System.Windows.Forms.Padding(2)
         Me.Name = "Question2"
         Me.Text = "Question2"
         Me.ResumeLayout(False)
@@ -151,4 +195,8 @@ Partial Class Question2
     Friend WithEvents lbl_consigne As Label
     Friend WithEvents lbl_calcul As Label
     Friend WithEvents rep As ListBox
+    Friend WithEvents TimerQ2 As Timer
+    Friend WithEvents lbl_min As Label
+    Friend WithEvents lbl_2points As Label
+    Friend WithEvents lbl_sec As Label
 End Class

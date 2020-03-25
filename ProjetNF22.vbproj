@@ -74,6 +74,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Module1.vb" />
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="Question10.Designer.vb">
       <DependentUpon>Question10.vb</DependentUpon>
     </Compile>
@@ -134,11 +139,6 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Application.myapp</DependentUpon>
     </Compile>
-    <Compile Include="My Project\Resources.Designer.vb">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Resources.resx</DependentUpon>
-    </Compile>
     <Compile Include="My Project\Settings.Designer.vb">
       <AutoGen>True</AutoGen>
       <DependentUpon>Settings.settings</DependentUpon>
@@ -169,12 +169,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="Question1.resx">
       <DependentUpon>Question1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Question10.resx">
+      <DependentUpon>Question10.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Question2.resx">
       <DependentUpon>Question2.vb</DependentUpon>
@@ -187,6 +190,21 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Question5.resx">
       <DependentUpon>Question5.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Question6.resx">
+      <DependentUpon>Question6.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Question7.resx">
+      <DependentUpon>Question7.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Question8.resx">
+      <DependentUpon>Question8.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Question9.resx">
+      <DependentUpon>Question9.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resultat.resx">
+      <DependentUpon>Resultat.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
@@ -202,22 +220,19 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\heure1.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\heure2.PNG" />
+  </ItemGroup>
+  <ItemGroup>
     <None Include="Resources\left-arrow.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\left-arrow1.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\left-arrow2.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\right-arrow.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\exit.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\exit1.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>
