@@ -38,6 +38,7 @@ Partial Class Question1
         Me.lbl_min = New System.Windows.Forms.Label()
         Me.lbl_sec = New System.Windows.Forms.Label()
         Me.lbl_2points = New System.Windows.Forms.Label()
+        Me.cmd_Aide = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'lblQ1
@@ -45,10 +46,9 @@ Partial Class Question1
         Me.lblQ1.AutoSize = True
         Me.lblQ1.BackColor = System.Drawing.Color.Transparent
         Me.lblQ1.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.875!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblQ1.Location = New System.Drawing.Point(25, 20)
-        Me.lblQ1.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.lblQ1.Location = New System.Drawing.Point(38, 31)
         Me.lblQ1.Name = "lblQ1"
-        Me.lblQ1.Size = New System.Drawing.Size(139, 29)
+        Me.lblQ1.Size = New System.Drawing.Size(209, 42)
         Me.lblQ1.TabIndex = 0
         Me.lblQ1.Text = "Question 1"
         '
@@ -57,10 +57,9 @@ Partial Class Question1
         Me.lbl_Francais.AutoSize = True
         Me.lbl_Francais.BackColor = System.Drawing.Color.Transparent
         Me.lbl_Francais.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.125!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lbl_Francais.Location = New System.Drawing.Point(166, 259)
-        Me.lbl_Francais.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.lbl_Francais.Location = New System.Drawing.Point(249, 405)
         Me.lbl_Francais.Name = "lbl_Francais"
-        Me.lbl_Francais.Size = New System.Drawing.Size(164, 20)
+        Me.lbl_Francais.Size = New System.Drawing.Size(263, 31)
         Me.lbl_Francais.TabIndex = 12
         Me.lbl_Francais.Text = "Question de français"
         '
@@ -68,10 +67,9 @@ Partial Class Question1
         '
         Me.lbl_NumQ.AutoSize = True
         Me.lbl_NumQ.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lbl_NumQ.Location = New System.Drawing.Point(488, 6)
-        Me.lbl_NumQ.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.lbl_NumQ.Location = New System.Drawing.Point(732, 9)
         Me.lbl_NumQ.Name = "lbl_NumQ"
-        Me.lbl_NumQ.Size = New System.Drawing.Size(38, 19)
+        Me.lbl_NumQ.Size = New System.Drawing.Size(56, 27)
         Me.lbl_NumQ.TabIndex = 13
         Me.lbl_NumQ.Text = "1/10"
         '
@@ -79,20 +77,18 @@ Partial Class Question1
         '
         Me.lbl_consigne.AutoSize = True
         Me.lbl_consigne.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.125!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lbl_consigne.Location = New System.Drawing.Point(27, 58)
-        Me.lbl_consigne.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.lbl_consigne.Location = New System.Drawing.Point(40, 91)
         Me.lbl_consigne.Name = "lbl_consigne"
-        Me.lbl_consigne.Size = New System.Drawing.Size(218, 20)
+        Me.lbl_consigne.Size = New System.Drawing.Size(347, 31)
         Me.lbl_consigne.TabIndex = 1
         Me.lbl_consigne.Text = "Quel est le féminin du coq ?"
         '
         'rep1
         '
         Me.rep1.AutoSize = True
-        Me.rep1.Location = New System.Drawing.Point(179, 95)
-        Me.rep1.Margin = New System.Windows.Forms.Padding(2)
+        Me.rep1.Location = New System.Drawing.Point(268, 148)
         Me.rep1.Name = "rep1"
-        Me.rep1.Size = New System.Drawing.Size(96, 21)
+        Me.rep1.Size = New System.Drawing.Size(144, 29)
         Me.rep1.TabIndex = 4
         Me.rep1.TabStop = True
         Me.rep1.Text = "une coque"
@@ -101,10 +97,9 @@ Partial Class Question1
         'rep2
         '
         Me.rep2.AutoSize = True
-        Me.rep2.Location = New System.Drawing.Point(179, 117)
-        Me.rep2.Margin = New System.Windows.Forms.Padding(2)
+        Me.rep2.Location = New System.Drawing.Point(268, 183)
         Me.rep2.Name = "rep2"
-        Me.rep2.Size = New System.Drawing.Size(92, 21)
+        Me.rep2.Size = New System.Drawing.Size(138, 29)
         Me.rep2.TabIndex = 5
         Me.rep2.TabStop = True
         Me.rep2.Text = "une poule"
@@ -113,10 +108,9 @@ Partial Class Question1
         'rep3
         '
         Me.rep3.AutoSize = True
-        Me.rep3.Location = New System.Drawing.Point(179, 140)
-        Me.rep3.Margin = New System.Windows.Forms.Padding(2)
+        Me.rep3.Location = New System.Drawing.Point(268, 219)
         Me.rep3.Name = "rep3"
-        Me.rep3.Size = New System.Drawing.Size(80, 21)
+        Me.rep3.Size = New System.Drawing.Size(120, 29)
         Me.rep3.TabIndex = 6
         Me.rep3.TabStop = True
         Me.rep3.Text = "une coq"
@@ -125,10 +119,9 @@ Partial Class Question1
         'rep4
         '
         Me.rep4.AutoSize = True
-        Me.rep4.Location = New System.Drawing.Point(179, 162)
-        Me.rep4.Margin = New System.Windows.Forms.Padding(2)
+        Me.rep4.Location = New System.Drawing.Point(268, 253)
         Me.rep4.Name = "rep4"
-        Me.rep4.Size = New System.Drawing.Size(104, 21)
+        Me.rep4.Size = New System.Drawing.Size(156, 29)
         Me.rep4.TabIndex = 7
         Me.rep4.TabStop = True
         Me.rep4.Text = "une canette"
@@ -137,10 +130,9 @@ Partial Class Question1
         'lbl_coq
         '
         Me.lbl_coq.AutoSize = True
-        Me.lbl_coq.Location = New System.Drawing.Point(96, 95)
-        Me.lbl_coq.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.lbl_coq.Location = New System.Drawing.Point(144, 148)
         Me.lbl_coq.Name = "lbl_coq"
-        Me.lbl_coq.Size = New System.Drawing.Size(68, 17)
+        Me.lbl_coq.Size = New System.Drawing.Size(102, 25)
         Me.lbl_coq.TabIndex = 2
         Me.lbl_coq.Text = "un coq ->"
         '
@@ -150,10 +142,9 @@ Partial Class Question1
         Me.cmd_next.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.875!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cmd_next.Image = CType(resources.GetObject("cmd_next.Image"), System.Drawing.Image)
         Me.cmd_next.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.cmd_next.Location = New System.Drawing.Point(458, 223)
-        Me.cmd_next.Margin = New System.Windows.Forms.Padding(2)
+        Me.cmd_next.Location = New System.Drawing.Point(687, 348)
         Me.cmd_next.Name = "cmd_next"
-        Me.cmd_next.Size = New System.Drawing.Size(67, 60)
+        Me.cmd_next.Size = New System.Drawing.Size(100, 94)
         Me.cmd_next.TabIndex = 3
         Me.cmd_next.TextAlign = System.Drawing.ContentAlignment.BottomCenter
         Me.cmd_next.UseVisualStyleBackColor = False
@@ -165,34 +156,48 @@ Partial Class Question1
         'lbl_min
         '
         Me.lbl_min.AutoSize = True
-        Me.lbl_min.Location = New System.Drawing.Point(217, 223)
+        Me.lbl_min.Location = New System.Drawing.Point(326, 348)
+        Me.lbl_min.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lbl_min.Name = "lbl_min"
-        Me.lbl_min.Size = New System.Drawing.Size(0, 17)
+        Me.lbl_min.Size = New System.Drawing.Size(0, 25)
         Me.lbl_min.TabIndex = 8
         '
         'lbl_sec
         '
         Me.lbl_sec.AutoSize = True
-        Me.lbl_sec.Location = New System.Drawing.Point(271, 223)
+        Me.lbl_sec.Location = New System.Drawing.Point(406, 348)
+        Me.lbl_sec.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lbl_sec.Name = "lbl_sec"
-        Me.lbl_sec.Size = New System.Drawing.Size(0, 17)
+        Me.lbl_sec.Size = New System.Drawing.Size(0, 25)
         Me.lbl_sec.TabIndex = 9
         '
         'lbl_2points
         '
         Me.lbl_2points.AutoSize = True
-        Me.lbl_2points.Location = New System.Drawing.Point(247, 223)
+        Me.lbl_2points.Location = New System.Drawing.Point(370, 348)
+        Me.lbl_2points.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lbl_2points.Name = "lbl_2points"
-        Me.lbl_2points.Size = New System.Drawing.Size(12, 17)
+        Me.lbl_2points.Size = New System.Drawing.Size(18, 25)
         Me.lbl_2points.TabIndex = 10
         Me.lbl_2points.Text = ":"
         '
+        'cmd_Aide
+        '
+        Me.cmd_Aide.Location = New System.Drawing.Point(675, 58)
+        Me.cmd_Aide.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.cmd_Aide.Name = "cmd_Aide"
+        Me.cmd_Aide.Size = New System.Drawing.Size(112, 36)
+        Me.cmd_Aide.TabIndex = 31
+        Me.cmd_Aide.Text = "Aide"
+        Me.cmd_Aide.UseVisualStyleBackColor = True
+        '
         'Question1
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(12.0!, 25.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.GradientActiveCaption
-        Me.ClientSize = New System.Drawing.Size(533, 288)
+        Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.cmd_Aide)
         Me.Controls.Add(Me.lbl_2points)
         Me.Controls.Add(Me.lbl_sec)
         Me.Controls.Add(Me.lbl_min)
@@ -206,7 +211,6 @@ Partial Class Question1
         Me.Controls.Add(Me.lbl_NumQ)
         Me.Controls.Add(Me.lbl_Francais)
         Me.Controls.Add(Me.lblQ1)
-        Me.Margin = New System.Windows.Forms.Padding(2)
         Me.Name = "Question1"
         Me.Text = "Question1"
         Me.ResumeLayout(False)
@@ -228,4 +232,5 @@ Partial Class Question1
     Friend WithEvents lbl_min As Label
     Friend WithEvents lbl_sec As Label
     Friend WithEvents lbl_2points As Label
+    Friend WithEvents cmd_Aide As Button
 End Class

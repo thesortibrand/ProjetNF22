@@ -26,4 +26,8 @@
         Question3.Show()
         Me.Hide()
     End Sub
+
+    Private Sub cmd_Aide_Click(sender As Object, e As EventArgs) Handles cmd_Aide.Click
+        MsgBox("INSTRUCTION : clique sur la flèche à côté de la date et selectionne la date de ton choix sur le calendrier qui s'affiche")
+    End Sub
 End Class

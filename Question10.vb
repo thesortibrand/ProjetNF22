@@ -48,6 +48,6 @@
     End Sub
 
     Private Sub cmd_Aide_Click(sender As Object, e As EventArgs) Handles cmd_Aide.Click
-        MsgBox("INSTRUCTION: Click sur les chiffres pour choisir la bonne composition.")
+        MsgBox("INSTRUCTION: Clique sur les chiffres pour choisir la bonne composition.")
     End Sub
 End Class

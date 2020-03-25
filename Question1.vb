@@ -47,4 +47,7 @@
         End If
     End Sub
 
+    Private Sub cmd_Aide_Click(sender As Object, e As EventArgs) Handles cmd_Aide.Click
+        MsgBox("INSTRUCTION : Clique sur le rond correspondant à la réponse de ton choix.")
+    End Sub
 End Class

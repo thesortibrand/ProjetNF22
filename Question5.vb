@@ -31,4 +31,7 @@
         Me.Hide()
     End Sub
 
+    Private Sub cmd_Aide_Click(sender As Object, e As EventArgs) Handles cmd_Aide.Click
+        MsgBox("INSTRUCTION : clique sur la zone de texte et écris ta réponse avec ton clavier")
+    End Sub
 End Class

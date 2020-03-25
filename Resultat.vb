@@ -45,7 +45,7 @@
     End Sub
 
     Private Sub cmd_Quitter_Click(sender As Object, e As EventArgs) Handles cmd_Quitter.Click
-        MsgBox("Merci :) Créé par Louis GARBAY et Daniel GARCIA")
+        MsgBox("Merci :)" & Chr(13) & Chr(10) & "Créé par Louis GARBAY et Daniel GARCIA")
         End
     End Sub
 End Class

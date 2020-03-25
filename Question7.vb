@@ -121,21 +121,20 @@
             If txtbox_mot1.Text = lbl_mot3.Text And txtbox_mot2.Text = lbl_mot5.Text And txtbox_mot3.Text = lbl_mot7.Text And txtbox_mot4.Text = lbl_mot6.Text And txtbox_mot5.Text = lbl_mot1.Text And txtbox_mot6.Text = lbl_mot4.Text And txtbox_mot7.Text = lbl_mot2.Text Then
                 n_gram += 1
             End If
-            Resultat.Show()
+            Question8.Show()
             Me.Hide()
         End If
     End Sub
 
     Private Sub cmd_Back_Click(sender As Object, e As EventArgs) Handles cmd_Back.Click
-        If txtbox_mot1.Text = "" Or txtbox_mot2.Text = "" Or txtbox_mot3.Text = "" Or txtbox_mot4.Text = "" Or txtbox_mot5.Text = "" Or txtbox_mot6.Text = "" Or txtbox_mot7.Text = "" Then
-            MsgBox("Complètes toutes les boîtes.")
-        Else
-            If n_lec = 1 Then
-                n_lec -= 1
-            End If
-            Question5.Show()
-            Me.Hide()
+
+
+        If n_lec = 1 Then
+            n_lec -= 1
         End If
+        Question6.Show()
+        Me.Hide()
+
     End Sub
 
     Private Sub cmd_Aide_Click(sender As Object, e As EventArgs) Handles cmd_Aide.Click

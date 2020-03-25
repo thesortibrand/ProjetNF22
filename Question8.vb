@@ -38,7 +38,7 @@
             If i = 3 Then
                 n_ari += 1
             End If
-            Resultat.Show()
+            Question9.Show()
             Me.Hide()
         End If
     End Sub

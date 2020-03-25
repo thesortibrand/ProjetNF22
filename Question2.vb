@@ -30,4 +30,7 @@
         Me.Hide()
     End Sub
 
+    Private Sub cmd_Aide_Click(sender As Object, e As EventArgs) Handles cmd_Aide.Click
+        MsgBox("INSTRUCTION : Clique sur un des nombres de ton choix en faisant défiler la bar")
+    End Sub
 End Class

@@ -31,4 +31,7 @@
         Me.Hide()
     End Sub
 
+    Private Sub cmd_Aide_Click(sender As Object, e As EventArgs) Handles cmd_Aide.Click
+        MsgBox("INSTRUCTION : Clique sur la flèche et selectionne la réponse de ton choix")
+    End Sub
 End Class
