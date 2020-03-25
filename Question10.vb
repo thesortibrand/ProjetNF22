@@ -28,7 +28,7 @@
 
     Private Sub cmd_next_Click(sender As Object, e As EventArgs) Handles cmd_Next.Click
         If lbl_30000.BorderStyle = BorderStyle.None And lbl_30.BorderStyle = BorderStyle.None And lbl_7.BorderStyle = BorderStyle.None And lbl_700.BorderStyle = BorderStyle.None And lbl_7000.BorderStyle = BorderStyle.None And lbl_9.BorderStyle = BorderStyle.None Then
-            MsgBox("Aucune réponse n'a été selectionnée")
+            MsgBox("Aucune chiffre n'a été selectionnée")
         Else
             If lbl_30000.BorderStyle = BorderStyle.FixedSingle And lbl_700.BorderStyle = BorderStyle.FixedSingle And
             lbl_30.BorderStyle = BorderStyle.FixedSingle And lbl_9.BorderStyle = BorderStyle.FixedSingle Then

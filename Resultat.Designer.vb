@@ -22,6 +22,9 @@ Partial Class Resultat
     'Ne la modifiez pas à l'aide de l'éditeur de code.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim ChartArea2 As System.Windows.Forms.DataVisualization.Charting.ChartArea = New System.Windows.Forms.DataVisualization.Charting.ChartArea()
+        Dim Legend2 As System.Windows.Forms.DataVisualization.Charting.Legend = New System.Windows.Forms.DataVisualization.Charting.Legend()
+        Dim Series2 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
         Me.lbl_score = New System.Windows.Forms.Label()
         Me.txtbox_score = New System.Windows.Forms.TextBox()
         Me.lbl_10 = New System.Windows.Forms.Label()
@@ -41,7 +44,9 @@ Partial Class Resultat
         Me.Label9 = New System.Windows.Forms.Label()
         Me.listbox_conseils = New System.Windows.Forms.ListBox()
         Me.cmd_Quitter = New System.Windows.Forms.Button()
+        Me.Chart_Resultats = New System.Windows.Forms.DataVisualization.Charting.Chart()
         Me.groupbox_categories.SuspendLayout()
+        CType(Me.Chart_Resultats, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'lbl_score
@@ -207,7 +212,7 @@ Partial Class Resultat
         '
         Me.Label9.AutoSize = True
         Me.Label9.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label9.Location = New System.Drawing.Point(493, 54)
+        Me.Label9.Location = New System.Drawing.Point(932, 53)
         Me.Label9.Name = "Label9"
         Me.Label9.Size = New System.Drawing.Size(74, 18)
         Me.Label9.TabIndex = 6
@@ -218,7 +223,7 @@ Partial Class Resultat
         Me.listbox_conseils.Enabled = False
         Me.listbox_conseils.FormattingEnabled = True
         Me.listbox_conseils.ItemHeight = 16
-        Me.listbox_conseils.Location = New System.Drawing.Point(423, 103)
+        Me.listbox_conseils.Location = New System.Drawing.Point(866, 104)
         Me.listbox_conseils.Name = "listbox_conseils"
         Me.listbox_conseils.Size = New System.Drawing.Size(217, 324)
         Me.listbox_conseils.TabIndex = 7
@@ -233,12 +238,29 @@ Partial Class Resultat
         Me.cmd_Quitter.Text = "Terminer "
         Me.cmd_Quitter.UseVisualStyleBackColor = True
         '
+        'Chart_Resultats
+        '
+        ChartArea2.Name = "ChartArea1"
+        Me.Chart_Resultats.ChartAreas.Add(ChartArea2)
+        Legend2.Name = "Legend1"
+        Me.Chart_Resultats.Legends.Add(Legend2)
+        Me.Chart_Resultats.Location = New System.Drawing.Point(356, 162)
+        Me.Chart_Resultats.Name = "Chart_Resultats"
+        Series2.ChartArea = "ChartArea1"
+        Series2.Legend = "Legend1"
+        Series2.Name = "Categories"
+        Me.Chart_Resultats.Series.Add(Series2)
+        Me.Chart_Resultats.Size = New System.Drawing.Size(454, 229)
+        Me.Chart_Resultats.TabIndex = 9
+        Me.Chart_Resultats.Text = "Chart_Resultats"
+        '
         'Resultat
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.GradientActiveCaption
-        Me.ClientSize = New System.Drawing.Size(761, 537)
+        Me.ClientSize = New System.Drawing.Size(1151, 547)
+        Me.Controls.Add(Me.Chart_Resultats)
         Me.Controls.Add(Me.cmd_Quitter)
         Me.Controls.Add(Me.listbox_conseils)
         Me.Controls.Add(Me.Label9)
@@ -250,6 +272,7 @@ Partial Class Resultat
         Me.Text = "Resultats"
         Me.groupbox_categories.ResumeLayout(False)
         Me.groupbox_categories.PerformLayout()
+        CType(Me.Chart_Resultats, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -274,4 +297,5 @@ Partial Class Resultat
     Friend WithEvents listbox_conseils As ListBox
     Friend WithEvents lbl_lec As Label
     Friend WithEvents cmd_Quitter As Button
+    Friend WithEvents Chart_Resultats As DataVisualization.Charting.Chart
 End Class
