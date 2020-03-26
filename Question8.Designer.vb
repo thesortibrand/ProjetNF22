@@ -200,12 +200,12 @@ Partial Class Question8
         '
         'cmd_Aide
         '
-        Me.cmd_Aide.Location = New System.Drawing.Point(948, 102)
+        Me.cmd_Aide.Location = New System.Drawing.Point(920, 102)
         Me.cmd_Aide.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.cmd_Aide.Name = "cmd_Aide"
-        Me.cmd_Aide.Size = New System.Drawing.Size(112, 36)
+        Me.cmd_Aide.Size = New System.Drawing.Size(127, 36)
         Me.cmd_Aide.TabIndex = 26
-        Me.cmd_Aide.Text = "Aide"
+        Me.cmd_Aide.Text = "Instruction"
         Me.cmd_Aide.UseVisualStyleBackColor = True
         '
         'TimerQ8
@@ -217,7 +217,7 @@ Partial Class Question8
         Me.AutoScaleDimensions = New System.Drawing.SizeF(12.0!, 25.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.GradientActiveCaption
-        Me.ClientSize = New System.Drawing.Size(1131, 688)
+        Me.ClientSize = New System.Drawing.Size(1062, 688)
         Me.Controls.Add(Me.cmd_Aide)
         Me.Controls.Add(Me.lbl_NumQ)
         Me.Controls.Add(Me.lbl_français)

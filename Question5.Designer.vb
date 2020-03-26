@@ -158,12 +158,12 @@ Partial Class Question5
         '
         'cmd_Aide
         '
-        Me.cmd_Aide.Location = New System.Drawing.Point(682, 56)
+        Me.cmd_Aide.Location = New System.Drawing.Point(675, 56)
         Me.cmd_Aide.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.cmd_Aide.Name = "cmd_Aide"
-        Me.cmd_Aide.Size = New System.Drawing.Size(112, 36)
+        Me.cmd_Aide.Size = New System.Drawing.Size(119, 36)
         Me.cmd_Aide.TabIndex = 31
-        Me.cmd_Aide.Text = "Aide"
+        Me.cmd_Aide.Text = "Instruction"
         Me.cmd_Aide.UseVisualStyleBackColor = True
         '
         'Question5
