@@ -40,7 +40,7 @@
             MsgBox("Aucune réponse n'a été selectionnée")
         Else
             If i = 2 Then
-                n_voc = n_voc + 1
+                n_voc += 1
             End If
             Question2.Show()
             Me.Hide()

@@ -31,7 +31,7 @@
     End Sub
 
     Private Sub cmd_back_Click(sender As Object, e As EventArgs) Handles cmd_Back.Click
-        If n_ari = 1 Or n_ari = 2 Then
+        If n_ari = 1 Or n_ari = 2 Or n_ari = 3 Then
             n_ari -= 1
         End If
         Question8.Show()
