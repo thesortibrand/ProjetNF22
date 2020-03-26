@@ -8,15 +8,8 @@
     End Sub
 
     Private Sub TimerQ8_Tick(sender As Object, e As EventArgs) Handles TimerQ8.Tick
-        If minutes <> 0 Then
-            If secondes = 0 Then
-                minutes -= 1
-                secondes = 60
-                lbl_min.Text = minutes
-            End If
-            secondes -= 1
-            lbl_sec.Text = secondes
-        End If
+        lbl_min.Text = minutes
+        lbl_sec.Text = secondes
     End Sub
 
     Private Sub rb_option1_CheckedChanged(sender As Object, e As EventArgs) Handles rb_option1.CheckedChanged

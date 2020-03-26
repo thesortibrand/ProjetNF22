@@ -182,9 +182,9 @@ Partial Class Question8
         Me.lbl_français.Location = New System.Drawing.Point(382, 634)
         Me.lbl_français.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lbl_français.Name = "lbl_français"
-        Me.lbl_français.Size = New System.Drawing.Size(357, 32)
+        Me.lbl_français.Size = New System.Drawing.Size(371, 32)
         Me.lbl_français.TabIndex = 24
-        Me.lbl_français.Text = "Question de Mathématique"
+        Me.lbl_français.Text = "Question de mathématiques"
         '
         'lbl_NumQ
         '
@@ -218,6 +218,7 @@ Partial Class Question8
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.GradientActiveCaption
         Me.ClientSize = New System.Drawing.Size(1062, 688)
+        Me.ControlBox = False
         Me.Controls.Add(Me.cmd_Aide)
         Me.Controls.Add(Me.lbl_NumQ)
         Me.Controls.Add(Me.lbl_français)

@@ -7,15 +7,8 @@
     End Sub
 
     Private Sub TimerQ8_Tick(sender As Object, e As EventArgs) Handles TimerQ10.Tick
-        If minutes <> 0 Then
-            If secondes = 0 Then
-                minutes -= 1
-                secondes = 60
-                lbl_min.Text = minutes
-            End If
-            secondes -= 1
-            lbl_sec.Text = secondes
-        End If
+        lbl_min.Text = minutes
+        lbl_sec.Text = secondes
     End Sub
 
     Private Sub lbl_chiffres_Click(sender As Object, e As EventArgs) Handles lbl_30000.Click, lbl_30.Click, lbl_7.Click, lbl_7000.Click, lbl_700.Click, lbl_9.Click

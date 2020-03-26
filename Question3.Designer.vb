@@ -182,6 +182,7 @@ Partial Class Question3
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.GradientActiveCaption
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.ControlBox = False
         Me.Controls.Add(Me.cmd_Aide)
         Me.Controls.Add(Me.lbl_sec)
         Me.Controls.Add(Me.lbl_2points)

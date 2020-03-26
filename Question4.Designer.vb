@@ -90,11 +90,11 @@ Partial Class Question4
         Me.lbl_Francais.AutoSize = True
         Me.lbl_Francais.BackColor = System.Drawing.Color.Transparent
         Me.lbl_Francais.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.125!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lbl_Francais.Location = New System.Drawing.Point(232, 403)
+        Me.lbl_Francais.Location = New System.Drawing.Point(224, 404)
         Me.lbl_Francais.Name = "lbl_Francais"
-        Me.lbl_Francais.Size = New System.Drawing.Size(338, 31)
+        Me.lbl_Francais.Size = New System.Drawing.Size(352, 31)
         Me.lbl_Francais.TabIndex = 8
-        Me.lbl_Francais.Text = "Question de mathématique"
+        Me.lbl_Francais.Text = "Question de mathématiques"
         '
         'lbl_consigne
         '
@@ -172,6 +172,7 @@ Partial Class Question4
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.GradientActiveCaption
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.ControlBox = False
         Me.Controls.Add(Me.cmd_Aide)
         Me.Controls.Add(Me.lbl_sec)
         Me.Controls.Add(Me.lbl_2points)

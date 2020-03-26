@@ -7,15 +7,8 @@
     End Sub
 
     Private Sub TimerQ9_Tick(sender As Object, e As EventArgs) Handles TimerQ9.Tick
-        If minutes <> 0 Then
-            If secondes = 0 Then
-                minutes -= 1
-                secondes = 60
-                lbl_min.Text = minutes
-            End If
-            secondes -= 1
-            lbl_sec.Text = secondes
-        End If
+        lbl_min.Text = minutes
+        lbl_sec.Text = secondes
     End Sub
 
     Private Sub cmd_next_Click(sender As Object, e As EventArgs) Handles cmd_Next.Click

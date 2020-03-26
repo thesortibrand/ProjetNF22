@@ -1,6 +1,9 @@
 ﻿Public Class Resultat
     Dim gram, voc, ponc, ari, lec As Integer
     Private Sub Resultat_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        lbl_min.Text = 29 - minutes
+        lbl_sec.Text = 60 - secondes
+
         txtbox_score.Text = n_ari + n_gram + n_lec + n_ponc + n_voc
 
         gram = (n_gram / 2) * 100

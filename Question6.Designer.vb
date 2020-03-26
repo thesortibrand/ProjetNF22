@@ -61,19 +61,20 @@ Partial Class Question6
         Me.lbl_consigne.Location = New System.Drawing.Point(75, 114)
         Me.lbl_consigne.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lbl_consigne.Name = "lbl_consigne"
-        Me.lbl_consigne.Size = New System.Drawing.Size(357, 32)
+        Me.lbl_consigne.Size = New System.Drawing.Size(380, 32)
         Me.lbl_consigne.TabIndex = 1
-        Me.lbl_consigne.Text = "Quel est la bonne horloge?"
+        Me.lbl_consigne.Text = "Quelle est la bonne horloge?"
         '
         'lbl_heure
         '
         Me.lbl_heure.AutoSize = True
-        Me.lbl_heure.Location = New System.Drawing.Point(184, 625)
+        Me.lbl_heure.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.875!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbl_heure.Location = New System.Drawing.Point(173, 625)
         Me.lbl_heure.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lbl_heure.Name = "lbl_heure"
-        Me.lbl_heure.Size = New System.Drawing.Size(157, 25)
+        Me.lbl_heure.Size = New System.Drawing.Size(180, 25)
         Me.lbl_heure.TabIndex = 5
-        Me.lbl_heure.Text = "Il est 7h 45 min"
+        Me.lbl_heure.Text = "Il est 7 h 45 min"
         '
         'lbl_NumQ
         '
@@ -94,9 +95,9 @@ Partial Class Question6
         Me.lbl_Math.Location = New System.Drawing.Point(405, 886)
         Me.lbl_Math.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lbl_Math.Name = "lbl_Math"
-        Me.lbl_Math.Size = New System.Drawing.Size(357, 32)
+        Me.lbl_Math.Size = New System.Drawing.Size(371, 32)
         Me.lbl_Math.TabIndex = 8
-        Me.lbl_Math.Text = "Question de Mathématique"
+        Me.lbl_Math.Text = "Question de mathématiques"
         '
         'Panel_reponse
         '
@@ -207,6 +208,7 @@ Partial Class Question6
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.GradientActiveCaption
         Me.ClientSize = New System.Drawing.Size(1112, 939)
+        Me.ControlBox = False
         Me.Controls.Add(Me.cmd_Aide)
         Me.Controls.Add(Me.lbl_sec)
         Me.Controls.Add(Me.lbl_2points)

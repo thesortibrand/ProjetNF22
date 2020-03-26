@@ -235,14 +235,14 @@ Partial Class Question10
         Me.lbl_français.Location = New System.Drawing.Point(300, 406)
         Me.lbl_français.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lbl_français.Name = "lbl_français"
-        Me.lbl_français.Size = New System.Drawing.Size(357, 32)
+        Me.lbl_français.Size = New System.Drawing.Size(371, 32)
         Me.lbl_français.TabIndex = 25
-        Me.lbl_français.Text = "Question de Mathématique"
+        Me.lbl_français.Text = "Question de mathématiques"
         '
         'lbl_min
         '
         Me.lbl_min.AutoSize = True
-        Me.lbl_min.Location = New System.Drawing.Point(442, 347)
+        Me.lbl_min.Location = New System.Drawing.Point(432, 347)
         Me.lbl_min.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lbl_min.Name = "lbl_min"
         Me.lbl_min.Size = New System.Drawing.Size(0, 25)
@@ -299,6 +299,7 @@ Partial Class Question10
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.GradientActiveCaption
         Me.ClientSize = New System.Drawing.Size(982, 483)
+        Me.ControlBox = False
         Me.Controls.Add(Me.cmd_Aide)
         Me.Controls.Add(Me.lbl_NumQ)
         Me.Controls.Add(Me.lbl_sec)

@@ -34,10 +34,9 @@ Partial Class Accueil
         '
         Me.lbl_evaluation.AutoSize = True
         Me.lbl_evaluation.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lbl_evaluation.Location = New System.Drawing.Point(163, 37)
-        Me.lbl_evaluation.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.lbl_evaluation.Location = New System.Drawing.Point(244, 58)
         Me.lbl_evaluation.Name = "lbl_evaluation"
-        Me.lbl_evaluation.Size = New System.Drawing.Size(217, 36)
+        Me.lbl_evaluation.Size = New System.Drawing.Size(338, 55)
         Me.lbl_evaluation.TabIndex = 0
         Me.lbl_evaluation.Text = "EVALUATION"
         '
@@ -45,10 +44,9 @@ Partial Class Accueil
         '
         Me.lbl_niveau.AutoSize = True
         Me.lbl_niveau.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lbl_niveau.Location = New System.Drawing.Point(180, 91)
-        Me.lbl_niveau.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.lbl_niveau.Location = New System.Drawing.Point(266, 135)
         Me.lbl_niveau.Name = "lbl_niveau"
-        Me.lbl_niveau.Size = New System.Drawing.Size(174, 36)
+        Me.lbl_niveau.Size = New System.Drawing.Size(281, 55)
         Me.lbl_niveau.TabIndex = 1
         Me.lbl_niveau.Text = "Niveau CE2"
         '
@@ -56,25 +54,23 @@ Partial Class Accueil
         '
         Me.cmd_start.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.cmd_start.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.cmd_start.Location = New System.Drawing.Point(230, 253)
-        Me.cmd_start.Margin = New System.Windows.Forms.Padding(2)
+        Me.cmd_start.Location = New System.Drawing.Point(345, 395)
         Me.cmd_start.Name = "cmd_start"
-        Me.cmd_start.Size = New System.Drawing.Size(243, 77)
+        Me.cmd_start.Size = New System.Drawing.Size(364, 120)
         Me.cmd_start.TabIndex = 3
-        Me.cmd_start.Text = "Demarrer l'évaluation"
+        Me.cmd_start.Text = "Démarrer l'évaluation"
         Me.cmd_start.UseVisualStyleBackColor = False
         '
         'lbl_explicationtest
         '
         Me.lbl_explicationtest.AutoSize = True
-        Me.lbl_explicationtest.Location = New System.Drawing.Point(79, 137)
-        Me.lbl_explicationtest.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.lbl_explicationtest.Location = New System.Drawing.Point(118, 214)
         Me.lbl_explicationtest.Name = "lbl_explicationtest"
         Me.lbl_explicationtest.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.lbl_explicationtest.Size = New System.Drawing.Size(365, 34)
+        Me.lbl_explicationtest.Size = New System.Drawing.Size(564, 50)
         Me.lbl_explicationtest.TabIndex = 2
         Me.lbl_explicationtest.Text = "Cette évaluation comprend 10 questions : " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "5 questions de français et 5 questions" &
-    " de mathématique."
+    " de mathématiques."
         Me.lbl_explicationtest.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'cmd_quitter
@@ -82,25 +78,26 @@ Partial Class Accueil
         Me.cmd_quitter.AutoSize = True
         Me.cmd_quitter.BackColor = System.Drawing.Color.White
         Me.cmd_quitter.Image = CType(resources.GetObject("cmd_quitter.Image"), System.Drawing.Image)
-        Me.cmd_quitter.Location = New System.Drawing.Point(72, 240)
-        Me.cmd_quitter.Margin = New System.Windows.Forms.Padding(2)
+        Me.cmd_quitter.Location = New System.Drawing.Point(108, 375)
         Me.cmd_quitter.Name = "cmd_quitter"
-        Me.cmd_quitter.Size = New System.Drawing.Size(100, 100)
+        Me.cmd_quitter.Size = New System.Drawing.Size(150, 156)
         Me.cmd_quitter.TabIndex = 4
         Me.cmd_quitter.TextAlign = System.Drawing.ContentAlignment.BottomCenter
         Me.cmd_quitter.UseVisualStyleBackColor = False
         '
         'Accueil
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(12.0!, 25.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.GradientActiveCaption
-        Me.ClientSize = New System.Drawing.Size(525, 391)
+        Me.ClientSize = New System.Drawing.Size(788, 611)
+        Me.ControlBox = False
         Me.Controls.Add(Me.lbl_explicationtest)
         Me.Controls.Add(Me.cmd_quitter)
         Me.Controls.Add(Me.cmd_start)
         Me.Controls.Add(Me.lbl_niveau)
         Me.Controls.Add(Me.lbl_evaluation)
+        Me.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.Name = "Accueil"
         Me.Text = "Accueil / Page de démarrage"
         Me.ResumeLayout(False)
