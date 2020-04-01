@@ -11,7 +11,7 @@
     End Sub
 
     Private Sub cmd_aideQ5_Click(sender As Object, e As EventArgs) Handles cmd_aideQ5.Click
-        MsgBox("Clique sur la flèche des boîtes de texte pour choisir une réponse.")
+        MsgBox("Cliques sur la flèche des boîtes de texte pour choisir une réponse.")
     End Sub
 
     Private Sub cmd_next_Click(sender As Object, e As EventArgs) Handles cmd_Next.Click

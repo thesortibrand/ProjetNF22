@@ -43,19 +43,19 @@
 
     'Code des boutons: Instruction 
     Private Sub cmd_aideQ6_Click(sender As Object, e As EventArgs) Handles cmd_aideQ6.Click
-        MsgBox("Clique sur un des nombres de ton choix en faisant défiler la bar")
+        MsgBox("Cliques sur un des nombres de ton choix en faisant défiler la bar")
     End Sub
 
     Private Sub cmd_aideQ7_Click(sender As Object, e As EventArgs) Handles cmd_aideQ7.Click
-        MsgBox("Clique sur la flèche à côté de la date et selectionne la date de ton choix sur le calendrier qui s'affiche")
+        MsgBox("Cliques sur la flèche à côté de la date et selectionne la date de ton choix sur le calendrier qui s'affiche")
     End Sub
 
     Private Sub cmd_aideQ8_Click(sender As Object, e As EventArgs) Handles cmd_aideQ8.Click
-        MsgBox("Clique sur un image pour choisir la bonne réponse")
+        MsgBox("Cliques sur un image pour choisir la bonne réponse")
     End Sub
 
     Private Sub cmd_aideQ9_Click(sender As Object, e As EventArgs) Handles cmd_aideQ9.Click
-        MsgBox("Clique sur les chiffres pour choisir la bonne composition")
+        MsgBox("Cliques sur les chiffres pour choisir la bonne composition")
     End Sub
 
     Private Sub cmd_Next_Click(sender As Object, e As EventArgs) Handles cmd_Next.Click

@@ -38,15 +38,15 @@
 
     'Code des boutons: Instruction 
     Private Sub cmd_aideQ1_Click(sender As Object, e As EventArgs) Handles cmd_aideQ1.Click
-        MsgBox("Clique sur le rond correspondant à la réponse de ton choix")
+        MsgBox("Cliques sur le rond correspondant à la réponse de ton choix")
     End Sub
 
     Private Sub cmd_aideQ2_Click(sender As Object, e As EventArgs) Handles cmd_aideQ2.Click
-        MsgBox("Clique sur la flèche et selectionne la réponse de ton choix")
+        MsgBox("Cliques sur la flèche et selectionne la réponse de ton choix")
     End Sub
 
     Private Sub cmd_aideQ3_Click(sender As Object, e As EventArgs) Handles cmd_aideQ3.Click
-        MsgBox("Clique sur la zone de texte et écris ta réponse avec ton clavier")
+        MsgBox("Cliques sur la zone de texte et écris ta réponse avec ton clavier")
     End Sub
 
     'Code du bouton pour passer à la prochaine Page de Questions

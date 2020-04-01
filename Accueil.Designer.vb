@@ -60,7 +60,7 @@ Partial Class Accueil
         '
         Me.cmd_start.BackColor = System.Drawing.Color.LimeGreen
         Me.cmd_start.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.cmd_start.Font = New System.Drawing.Font("Comic Sans MS", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.cmd_start.Font = New System.Drawing.Font("Comic Sans MS", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cmd_start.Location = New System.Drawing.Point(250, 405)
         Me.cmd_start.Margin = New System.Windows.Forms.Padding(2)
         Me.cmd_start.Name = "cmd_start"
@@ -121,9 +121,9 @@ Partial Class Accueil
         Me.lbl_nouveau.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.lbl_nouveau.Name = "lbl_nouveau"
         Me.lbl_nouveau.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.lbl_nouveau.Size = New System.Drawing.Size(176, 48)
+        Me.lbl_nouveau.Size = New System.Drawing.Size(169, 48)
         Me.lbl_nouveau.TabIndex = 2
-        Me.lbl_nouveau.Text = "Nouveau utilisateur?" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Clique sur ""Manuel""."
+        Me.lbl_nouveau.Text = "Nouvel utilisateur?" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Clique sur ""Manuel""."
         Me.lbl_nouveau.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
         'Accueil

@@ -1,6 +1,7 @@
 ﻿Public Class Accueil
-    Private Sub cmd_Quitter_Click(sender As Object, e As EventArgs) Handles cmd_quitter.Click
-        End
+    Private Sub btn_Manuel_Click(sender As Object, e As EventArgs) Handles btn_Manuel.Click
+        Manuel.Show()
+        Me.Hide()
     End Sub
 
     Private Sub cmd_start_Click(sender As Object, e As EventArgs) Handles cmd_start.Click
@@ -17,5 +18,9 @@
 
         Questions1.Show()
         Me.Hide()
+    End Sub
+
+    Private Sub cmd_Quitter_Click(sender As Object, e As EventArgs) Handles cmd_quitter.Click
+        End
     End Sub
 End Class

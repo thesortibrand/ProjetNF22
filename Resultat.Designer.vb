@@ -25,6 +25,7 @@ Partial Class Resultat
         Dim ChartArea1 As System.Windows.Forms.DataVisualization.Charting.ChartArea = New System.Windows.Forms.DataVisualization.Charting.ChartArea()
         Dim Legend1 As System.Windows.Forms.DataVisualization.Charting.Legend = New System.Windows.Forms.DataVisualization.Charting.Legend()
         Dim Series1 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Resultat))
         Me.lbl_score = New System.Windows.Forms.Label()
         Me.txtbox_score = New System.Windows.Forms.TextBox()
         Me.lbl_10 = New System.Windows.Forms.Label()
@@ -41,13 +42,14 @@ Partial Class Resultat
         Me.lbl_math = New System.Windows.Forms.Label()
         Me.lbl_voc = New System.Windows.Forms.Label()
         Me.lbl_gram = New System.Windows.Forms.Label()
-        Me.cmd_Quitter = New System.Windows.Forms.Button()
         Me.Chart_Resultats = New System.Windows.Forms.DataVisualization.Charting.Chart()
         Me.lbl_minRes = New System.Windows.Forms.Label()
         Me.lbl_deuxptsRes = New System.Windows.Forms.Label()
         Me.lbl_secRes = New System.Windows.Forms.Label()
         Me.GroupBox_duree = New System.Windows.Forms.GroupBox()
         Me.gb_conseils = New System.Windows.Forms.GroupBox()
+        Me.cmd_enregistrer = New System.Windows.Forms.Button()
+        Me.cmd_quitter = New System.Windows.Forms.Button()
         Me.groupbox_categories.SuspendLayout()
         CType(Me.Chart_Resultats, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox_duree.SuspendLayout()
@@ -214,18 +216,6 @@ Partial Class Resultat
         Me.lbl_gram.TabIndex = 5
         Me.lbl_gram.Text = "Grammaire"
         '
-        'cmd_Quitter
-        '
-        Me.cmd_Quitter.BackColor = System.Drawing.Color.LimeGreen
-        Me.cmd_Quitter.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.cmd_Quitter.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.cmd_Quitter.Location = New System.Drawing.Point(109, 500)
-        Me.cmd_Quitter.Name = "cmd_Quitter"
-        Me.cmd_Quitter.Size = New System.Drawing.Size(130, 43)
-        Me.cmd_Quitter.TabIndex = 8
-        Me.cmd_Quitter.Text = "Terminer "
-        Me.cmd_Quitter.UseVisualStyleBackColor = False
-        '
         'Chart_Resultats
         '
         ChartArea1.Name = "ChartArea1"
@@ -239,7 +229,7 @@ Partial Class Resultat
         Series1.Name = "Categories"
         Me.Chart_Resultats.Series.Add(Series1)
         Me.Chart_Resultats.Size = New System.Drawing.Size(454, 258)
-        Me.Chart_Resultats.TabIndex = 17
+        Me.Chart_Resultats.TabIndex = 20
         Me.Chart_Resultats.Text = "Chart_Resultats"
         '
         'lbl_minRes
@@ -249,9 +239,8 @@ Partial Class Resultat
         Me.lbl_minRes.Location = New System.Drawing.Point(23, 33)
         Me.lbl_minRes.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.lbl_minRes.Name = "lbl_minRes"
-        Me.lbl_minRes.Size = New System.Drawing.Size(36, 28)
+        Me.lbl_minRes.Size = New System.Drawing.Size(0, 28)
         Me.lbl_minRes.TabIndex = 17
-        Me.lbl_minRes.Text = "20"
         '
         'lbl_deuxptsRes
         '
@@ -271,9 +260,8 @@ Partial Class Resultat
         Me.lbl_secRes.Location = New System.Drawing.Point(90, 33)
         Me.lbl_secRes.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.lbl_secRes.Name = "lbl_secRes"
-        Me.lbl_secRes.Size = New System.Drawing.Size(36, 28)
+        Me.lbl_secRes.Size = New System.Drawing.Size(0, 28)
         Me.lbl_secRes.TabIndex = 19
-        Me.lbl_secRes.Text = "20"
         '
         'GroupBox_duree
         '
@@ -281,9 +269,9 @@ Partial Class Resultat
         Me.GroupBox_duree.Controls.Add(Me.lbl_secRes)
         Me.GroupBox_duree.Controls.Add(Me.lbl_minRes)
         Me.GroupBox_duree.Location = New System.Drawing.Point(400, 30)
-        Me.GroupBox_duree.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.GroupBox_duree.Margin = New System.Windows.Forms.Padding(2)
         Me.GroupBox_duree.Name = "GroupBox_duree"
-        Me.GroupBox_duree.Padding = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.GroupBox_duree.Padding = New System.Windows.Forms.Padding(2)
         Me.GroupBox_duree.Size = New System.Drawing.Size(133, 72)
         Me.GroupBox_duree.TabIndex = 16
         Me.GroupBox_duree.TabStop = False
@@ -294,10 +282,36 @@ Partial Class Resultat
         Me.gb_conseils.Font = New System.Drawing.Font("Comic Sans MS", 13.8!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Underline), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.gb_conseils.Location = New System.Drawing.Point(400, 443)
         Me.gb_conseils.Name = "gb_conseils"
-        Me.gb_conseils.Size = New System.Drawing.Size(454, 100)
-        Me.gb_conseils.TabIndex = 18
+        Me.gb_conseils.Size = New System.Drawing.Size(454, 124)
+        Me.gb_conseils.TabIndex = 21
         Me.gb_conseils.TabStop = False
         Me.gb_conseils.Text = "Conseils"
+        '
+        'cmd_enregistrer
+        '
+        Me.cmd_enregistrer.BackColor = System.Drawing.Color.LimeGreen
+        Me.cmd_enregistrer.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.cmd_enregistrer.Font = New System.Drawing.Font("Comic Sans MS", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.cmd_enregistrer.Location = New System.Drawing.Point(670, 30)
+        Me.cmd_enregistrer.Name = "cmd_enregistrer"
+        Me.cmd_enregistrer.Size = New System.Drawing.Size(115, 72)
+        Me.cmd_enregistrer.TabIndex = 22
+        Me.cmd_enregistrer.Text = "Enregistrer Résultats"
+        Me.cmd_enregistrer.UseVisualStyleBackColor = False
+        '
+        'cmd_quitter
+        '
+        Me.cmd_quitter.AutoSize = True
+        Me.cmd_quitter.BackColor = System.Drawing.Color.White
+        Me.cmd_quitter.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.cmd_quitter.Image = CType(resources.GetObject("cmd_quitter.Image"), System.Drawing.Image)
+        Me.cmd_quitter.Location = New System.Drawing.Point(130, 487)
+        Me.cmd_quitter.Margin = New System.Windows.Forms.Padding(2)
+        Me.cmd_quitter.Name = "cmd_quitter"
+        Me.cmd_quitter.Size = New System.Drawing.Size(80, 80)
+        Me.cmd_quitter.TabIndex = 23
+        Me.cmd_quitter.TextAlign = System.Drawing.ContentAlignment.BottomCenter
+        Me.cmd_quitter.UseVisualStyleBackColor = False
         '
         'Resultat
         '
@@ -305,12 +319,13 @@ Partial Class Resultat
         Me.AutoScroll = True
         Me.AutoSize = True
         Me.BackColor = System.Drawing.SystemColors.GradientActiveCaption
-        Me.ClientSize = New System.Drawing.Size(928, 599)
+        Me.ClientSize = New System.Drawing.Size(928, 619)
         Me.ControlBox = False
+        Me.Controls.Add(Me.cmd_quitter)
+        Me.Controls.Add(Me.cmd_enregistrer)
         Me.Controls.Add(Me.gb_conseils)
         Me.Controls.Add(Me.GroupBox_duree)
         Me.Controls.Add(Me.Chart_Resultats)
-        Me.Controls.Add(Me.cmd_Quitter)
         Me.Controls.Add(Me.groupbox_categories)
         Me.Controls.Add(Me.lbl_10)
         Me.Controls.Add(Me.txtbox_score)
@@ -345,11 +360,12 @@ Partial Class Resultat
     Friend WithEvents lbl_voc As Label
     Friend WithEvents lbl_gram As Label
     Friend WithEvents lbl_lec As Label
-    Friend WithEvents cmd_Quitter As Button
     Friend WithEvents Chart_Resultats As DataVisualization.Charting.Chart
     Friend WithEvents lbl_minRes As Label
     Friend WithEvents lbl_deuxptsRes As Label
     Friend WithEvents lbl_secRes As Label
     Friend WithEvents GroupBox_duree As GroupBox
     Friend WithEvents gb_conseils As GroupBox
+    Friend WithEvents cmd_enregistrer As Button
+    Friend WithEvents cmd_quitter As Button
 End Class

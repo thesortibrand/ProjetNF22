@@ -47,7 +47,11 @@
 
     End Sub
 
-    Private Sub cmd_Quitter_Click(sender As Object, e As EventArgs) Handles cmd_Quitter.Click
+    Private Sub cmd_enregistrer_Click(sender As Object, e As EventArgs) Handles cmd_enregistrer.Click
+
+    End Sub
+
+    Private Sub cmd_Quitter_Click(sender As Object, e As EventArgs) Handles cmd_quitter.Click
         MsgBox("Merci :)" & Chr(13) & Chr(10) & "Créé par Louis GARBAY et Daniel GARCIA.")
         End
     End Sub
