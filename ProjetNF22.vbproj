@@ -74,7 +74,13 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Module1.vb" />
+    <Compile Include="Questions1.Designer.vb">
+      <DependentUpon>Questions1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Questions1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Module.vb" />
     <Compile Include="My Project\Resources.Designer.vb">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -86,10 +92,10 @@
     <Compile Include="Question10.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Question7.Designer.vb">
-      <DependentUpon>Question7.vb</DependentUpon>
+    <Compile Include="Questions2.Designer.vb">
+      <DependentUpon>Questions2.vb</DependentUpon>
     </Compile>
-    <Compile Include="Question7.vb">
+    <Compile Include="Questions2.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Question4.Designer.vb">
@@ -129,10 +135,10 @@
     <Compile Include="Question5.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Question6.Designer.vb">
-      <DependentUpon>Question6.vb</DependentUpon>
+    <Compile Include="Questions5.Designer.vb">
+      <DependentUpon>Questions5.vb</DependentUpon>
     </Compile>
-    <Compile Include="Question6.vb">
+    <Compile Include="Questions5.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
@@ -151,10 +157,16 @@
     <Compile Include="Question8.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Question9.Designer.vb">
-      <DependentUpon>Question9.vb</DependentUpon>
+    <Compile Include="Questions3.Designer.vb">
+      <DependentUpon>Questions3.vb</DependentUpon>
     </Compile>
-    <Compile Include="Question9.vb">
+    <Compile Include="Questions3.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Questions4.Designer.vb">
+      <DependentUpon>Questions4.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Questions4.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Resultat.Designer.vb">
@@ -167,6 +179,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Accueil.resx">
       <DependentUpon>Accueil.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Questions1.resx">
+      <DependentUpon>Questions1.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
@@ -192,17 +207,20 @@
     <EmbeddedResource Include="Question5.resx">
       <DependentUpon>Question5.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Question6.resx">
-      <DependentUpon>Question6.vb</DependentUpon>
+    <EmbeddedResource Include="Questions5.resx">
+      <DependentUpon>Questions5.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Question7.resx">
-      <DependentUpon>Question7.vb</DependentUpon>
+    <EmbeddedResource Include="Questions2.resx">
+      <DependentUpon>Questions2.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Question8.resx">
       <DependentUpon>Question8.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Question9.resx">
-      <DependentUpon>Question9.vb</DependentUpon>
+    <EmbeddedResource Include="Questions3.resx">
+      <DependentUpon>Questions3.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Questions4.resx">
+      <DependentUpon>Questions4.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Resultat.resx">
       <DependentUpon>Resultat.vb</DependentUpon>
@@ -243,6 +261,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\4pommes.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\test_background.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\terminer.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

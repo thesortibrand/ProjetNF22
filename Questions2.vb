@@ -1,11 +1,11 @@
-﻿Public Class Question7
+﻿Public Class Questions2
     Dim coordonnees As Point
     Dim x1, x2, y1, y2, x3, y3, x4, y4, x5, y5, x6, y6, x7, y7 As Double
 
-    Private Sub Question7_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        TimerQ7 = timer_test
-        lbl_min.Text = minutes
-        lbl_sec.Text = secondes
+    Private Sub Questions2_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        TimerQ2 = timer_test
+        lbl_minQ2.Text = minutes
+        lbl_secQ2.Text = secondes
 
         x1 = lbl_mot1.Left
         y1 = lbl_mot1.Top
@@ -31,12 +31,12 @@
 
     End Sub
 
-    Private Sub TimerQ7_Tick(sender As Object, e As EventArgs) Handles TimerQ7.Tick
-        lbl_min.Text = minutes
-        lbl_sec.Text = secondes
+    Private Sub TimerQ2_Tick(sender As Object, e As EventArgs) Handles TimerQ2.Tick
+        lbl_minQ2.Text = minutes
+        lbl_secQ2.Text = secondes
     End Sub
 
-    Private Sub Label_MouseDown(sender As Object, e As MouseEventArgs) Handles lbl_mot1.MouseDown, lbl_mot2.MouseDown, lbl_mot3.MouseDown, lbl_mot4.MouseDown, lbl_mot5.MouseDown, lbl_mot6.MouseDown, lbl_mot7.MouseDown
+    Private Sub lbl_mot_MouseDown(sender As Object, e As MouseEventArgs) Handles lbl_mot1.MouseDown, lbl_mot2.MouseDown, lbl_mot3.MouseDown, lbl_mot4.MouseDown, lbl_mot5.MouseDown, lbl_mot6.MouseDown, lbl_mot7.MouseDown
         coordonnees.X = MousePosition.X - sender.left
         coordonnees.Y = MousePosition.Y - sender.top
     End Sub
@@ -114,6 +114,10 @@
         lbl_mot7.Left = x7
     End Sub
 
+    Private Sub cmd_aideQ4_Click(sender As Object, e As EventArgs) Handles cmd_aideQ4.Click
+        MsgBox("Appuies et maintiens le click sur un mot, puis faites-le glisser vers une boîte vide pour la remplir")
+    End Sub
+
     Private Sub cmd_Next_Click(sender As Object, e As EventArgs) Handles cmd_Next.Click
         If txtbox_mot1.Text = "" Or txtbox_mot2.Text = "" Or txtbox_mot3.Text = "" Or txtbox_mot4.Text = "" Or txtbox_mot5.Text = "" Or txtbox_mot6.Text = "" Or txtbox_mot7.Text = "" Then
             MsgBox("Complètes toutes les boîtes.")
@@ -121,26 +125,27 @@
             If txtbox_mot1.Text = lbl_mot3.Text And txtbox_mot2.Text = lbl_mot5.Text And txtbox_mot3.Text = lbl_mot7.Text And txtbox_mot4.Text = lbl_mot6.Text And txtbox_mot5.Text = lbl_mot1.Text And txtbox_mot6.Text = lbl_mot4.Text And txtbox_mot7.Text = lbl_mot2.Text Then
                 n_gram += 1
             End If
-            Question8.Show()
+            Questions3.Show()
             Me.Hide()
         End If
     End Sub
 
     Private Sub cmd_Back_Click(sender As Object, e As EventArgs) Handles cmd_Back.Click
-
-
-        If n_lec = 1 Then
-            n_lec -= 1
+        'Ifs pour reinitialiser les réponses de Question 1 et 3
+        If n_voc = 1 Then
+            n_voc -= 1
         End If
-        Question6.Show()
+
+        If n_voc = 2 Then
+            n_voc -= 2
+        End If
+
+        'If pour reinitialiser la réponse de Question 2 
+        If n_gram = 1 Then
+            n_gram -= 1
+        End If
+        Questions1.Show()
         Me.Hide()
-
     End Sub
-
-    Private Sub cmd_Aide_Click(sender As Object, e As EventArgs) Handles cmd_Aide.Click
-        MsgBox("INSTRUCTION: Pour tous le mots: Appuyez et maintenez click sur un mot, puis faites-le glisser vers une boîte vide pour la remplir.")
-    End Sub
-
-
 
 End Class

@@ -1,11 +1,11 @@
-﻿Public Class Question6
+﻿Public Class Questions5
     Dim coordonnees As Point
     Dim x1, x2, y1, y2 As Double
 
-    Private Sub Question6_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        TimerQ6 = timer_test
-        lbl_min.Text = minutes
-        lbl_sec.Text = secondes
+    Private Sub Questions5_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        TimerQ5 = timer_test
+        lbl_minQ10.Text = minutes
+        lbl_secQ10.Text = secondes
 
         x1 = pb_horloge1.Left
         y1 = pb_horloge1.Top
@@ -13,9 +13,9 @@
         y2 = pb_horloge2.Top
     End Sub
 
-    Private Sub TimerQ6_Tick(sender As Object, e As EventArgs) Handles TimerQ6.Tick
-        lbl_min.Text = minutes
-        lbl_sec.Text = secondes
+    Private Sub TimerQ5_Tick(sender As Object, e As EventArgs) Handles TimerQ5.Tick
+        lbl_minQ10.Text = minutes
+        lbl_secQ10.Text = secondes
     End Sub
 
     Private Sub PictureBox_MouseDown(sender As Object, e As MouseEventArgs) Handles pb_horloge1.MouseDown, pb_horloge2.MouseDown
@@ -43,10 +43,7 @@
                 Panel_reponse.BackColor = Color.White
 
             End If
-
-
         End If
-
     End Sub
 
     Private Sub PictureBox_MouseUp(sender As Object, e As MouseEventArgs) Handles pb_horloge1.MouseUp, pb_horloge2.MouseUp
@@ -57,32 +54,48 @@
         sender.BorderStyle = BorderStyle.None
     End Sub
 
+    Private Sub cmd_aideQ10_Click(sender As Object, e As EventArgs) Handles cmd_aideQ10.Click
+        MsgBox("Appuies et maintiens le click sur l'image que tu considères comme la bonne réponse, puis faites-la glisser vers la boîte vide pour la remplir")
+    End Sub
+
     Private Sub cmd_Next_Click(sender As Object, e As EventArgs) Handles cmd_Next.Click
         If Panel_reponse.BackgroundImage Is Nothing Then
-            MsgBox("Aucune réponse n'a été rentrée")
+            MsgBox("Aucune réponse de la Question 10 n'a été rentrée")
         Else
             If Panel_reponse.BackgroundImage Is pb_horloge2.Image Then
                 n_lec += 1
             End If
-            Question7.Show()
+
+            If minutes = 0 Then
+                MsgBox("Le temps de réalisation est terminé")
+                timer_test.Stop()
+            End If
+
+            Resultat.Show()
             Me.Hide()
-        End If
+            End If
     End Sub
 
     Private Sub cmd_Back_Click(sender As Object, e As EventArgs) Handles cmd_Back.Click
-        If Panel_reponse.BackgroundImage Is Nothing Then
-            MsgBox("Aucune réponse n'a été rentrée")
-        Else
-            If n_voc = 1 Or n_voc = 2 Then
-                n_voc -= 1
-            End If
-            Question5.Show()
-            Me.Hide()
+        'Ifs pour reinitialiser les réponses des Question 6-9
+        If n_ari = 1 Then
+            n_ari -= 1
         End If
-    End Sub
 
-    Private Sub cmd_Aide_Click(sender As Object, e As EventArgs) Handles cmd_Aide.Click
-        MsgBox("INSTRUCTION: Appuyez et maintenez click sur l'image que vous considérez comme la bonne réponse, puis faites-la glisser vers la boîte vide pour la remplir.")
+        If n_ari = 2 Then
+            n_ari -= 2
+        End If
+
+        If n_ari = 1 Then
+            n_ari -= 3
+        End If
+
+        If n_ari = 1 Then
+            n_ari -= 4
+        End If
+
+        Questions4.Show()
+        Me.Hide()
     End Sub
 
 End Class

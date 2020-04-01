@@ -18,7 +18,7 @@
             If TextBox.Text = "chevaux" Or TextBox.Text = "Chevaux" Then
                 n_voc = n_voc + 1
             End If
-            Question6.Show()
+            Questions5.Show()
             Me.Hide()
         End If
     End Sub

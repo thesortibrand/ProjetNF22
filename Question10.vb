@@ -36,7 +36,7 @@
         If n_ponc = 1 Then
             n_ponc -= 1
         End If
-        Question9.Show()
+        Questions3.Show()
         Me.Hide()
     End Sub
 

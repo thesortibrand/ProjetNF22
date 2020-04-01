@@ -1,14 +1,17 @@
-﻿Public Class Question9
-    Private Sub Question9_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        TimerQ9.Start()
-        timer_test = TimerQ9
-        lbl_min.Text = minutes
-        lbl_sec.Text = secondes
+﻿Public Class Questions3
+    Private Sub Questions3_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        TimerQ3 = timer_test
+        lbl_minQ3.Text = minutes
+        lbl_secQ3.Text = secondes
     End Sub
 
-    Private Sub TimerQ9_Tick(sender As Object, e As EventArgs) Handles TimerQ9.Tick
-        lbl_min.Text = minutes
-        lbl_sec.Text = secondes
+    Private Sub TimerQ3_Tick(sender As Object, e As EventArgs) Handles TimerQ3.Tick
+        lbl_minQ3.Text = minutes
+        lbl_secQ3.Text = secondes
+    End Sub
+
+    Private Sub cmd_aideQ5_Click(sender As Object, e As EventArgs) Handles cmd_aideQ5.Click
+        MsgBox("Clique sur la flèche des boîtes de texte pour choisir une réponse.")
     End Sub
 
     Private Sub cmd_next_Click(sender As Object, e As EventArgs) Handles cmd_Next.Click
@@ -18,20 +21,17 @@
             If cb1.SelectedIndex = 1 And cb2.SelectedIndex = 2 And cb3.SelectedIndex = 0 And cb4.SelectedIndex = 0 And cb5.SelectedIndex = 0 And cb6.SelectedIndex = 1 And cb7.SelectedIndex = 0 And cb8.SelectedIndex = 0 And cb9.SelectedIndex = 1 And cb10.SelectedIndex = 0 And cb11.SelectedIndex = 0 And cb12.SelectedIndex = 0 And cb13.SelectedIndex = 1 And cb14.SelectedIndex = 3 Then
                 n_ponc += 1
             End If
-            Question10.Show()
+            Questions4.Show()
             Me.Hide()
         End If
     End Sub
 
     Private Sub cmd_back_Click(sender As Object, e As EventArgs) Handles cmd_Back.Click
-        If n_ari = 1 Or n_ari = 2 Or n_ari = 3 Then
-            n_ari -= 1
+        'If pour reinitialiser la réponse de la Question 4
+        If n_gram = 1 Or n_gram = 2 Then
+            n_gram -= 1
         End If
-        Question8.Show()
+        Questions2.Show()
         Me.Hide()
-    End Sub
-
-    Private Sub cmd_Aide_Click(sender As Object, e As EventArgs) Handles cmd_Aide.Click
-        MsgBox("INSTRUCTION: Click sur les boîtes pour choisir une réponse.")
     End Sub
 End Class

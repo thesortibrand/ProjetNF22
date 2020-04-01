@@ -1,8 +1,8 @@
 ﻿Public Class Resultat
     Dim gram, voc, ponc, ari, lec As Integer
     Private Sub Resultat_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        lbl_min.Text = 29 - minutes
-        lbl_sec.Text = 60 - secondes
+        lbl_minRes.Text = 29 - minutes
+        lbl_secRes.Text = 60 - secondes
 
         txtbox_score.Text = n_ari + n_gram + n_lec + n_ponc + n_voc
 
@@ -26,29 +26,29 @@
         Me.Chart_Resultats.Series("Categories").Points.AddXY("Horloge", lec)
 
         If ((n_ari / 4) * 100) <> 100 Then
-            listbox_conseils.Items.Add("- Conseil Arithmétique")
+            MsgBox("- Conseil Arithmétique")
         End If
 
         If ((n_gram / 2) * 100) <> 100 Then
-            listbox_conseils.Items.Add("- Conseil Grammaire")
+            MsgBox("- Conseil Grammaire")
         End If
 
         If ((n_lec / 1) * 100) <> 100 Then
-            listbox_conseils.Items.Add("- Conseil Lecture Horloge")
+            MsgBox("- Conseil Lecture Horloge")
         End If
 
         If ((n_ponc / 1) * 100) <> 100 Then
-            listbox_conseils.Items.Add("- Conseil Ponctuation")
+            MsgBox("- Conseil Ponctuation")
         End If
 
         If ((n_voc / 2) * 100) <> 100 Then
-            listbox_conseils.Items.Add("- Conseil Vocabulaire")
+            MsgBox("- Conseil Vocabulaire")
         End If
 
     End Sub
 
     Private Sub cmd_Quitter_Click(sender As Object, e As EventArgs) Handles cmd_Quitter.Click
-        MsgBox("Merci :)" & Chr(13) & Chr(10) & "Créé par Louis GARBAY et Daniel GARCIA")
+        MsgBox("Merci :)" & Chr(13) & Chr(10) & "Créé par Louis GARBAY et Daniel GARCIA.")
         End
     End Sub
 End Class

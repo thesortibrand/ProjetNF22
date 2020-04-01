@@ -1,11 +1,6 @@
 ﻿Public Class Accueil
     Private Sub cmd_Quitter_Click(sender As Object, e As EventArgs) Handles cmd_quitter.Click
-        Dim reponse_quitter As String = InputBox("Fermer le programme? Oui/Non")
-
-        If reponse_quitter = "Oui" Or reponse_quitter = "oui" Then
-            End
-        End If
-
+        End
     End Sub
 
     Private Sub cmd_start_Click(sender As Object, e As EventArgs) Handles cmd_start.Click
@@ -20,7 +15,7 @@
         minutes = 30
         secondes = 0
 
-        Question1.Show()
+        Questions1.Show()
         Me.Hide()
     End Sub
 End Class

@@ -31,7 +31,7 @@
             If i = 3 Then
                 n_ari += 1
             End If
-            Question9.Show()
+            Questions3.Show()
             Me.Hide()
         End If
     End Sub
@@ -40,7 +40,7 @@
         If n_gram = 1 Or n_gram = 2 Then
             n_gram -= 1
         End If
-        Question7.Show()
+        Questions2.Show()
         Me.Hide()
     End Sub
 
