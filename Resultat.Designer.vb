@@ -50,9 +50,15 @@ Partial Class Resultat
         Me.gb_conseils = New System.Windows.Forms.GroupBox()
         Me.cmd_enregistrer = New System.Windows.Forms.Button()
         Me.cmd_quitter = New System.Windows.Forms.Button()
+        Me.bt_lec = New System.Windows.Forms.Button()
+        Me.bt_ari = New System.Windows.Forms.Button()
+        Me.bt_ponc = New System.Windows.Forms.Button()
+        Me.bt_voc = New System.Windows.Forms.Button()
+        Me.bt_gram = New System.Windows.Forms.Button()
         Me.groupbox_categories.SuspendLayout()
         CType(Me.Chart_Resultats, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox_duree.SuspendLayout()
+        Me.gb_conseils.SuspendLayout()
         Me.SuspendLayout()
         '
         'lbl_score
@@ -279,6 +285,11 @@ Partial Class Resultat
         '
         'gb_conseils
         '
+        Me.gb_conseils.Controls.Add(Me.bt_lec)
+        Me.gb_conseils.Controls.Add(Me.bt_ari)
+        Me.gb_conseils.Controls.Add(Me.bt_ponc)
+        Me.gb_conseils.Controls.Add(Me.bt_voc)
+        Me.gb_conseils.Controls.Add(Me.bt_gram)
         Me.gb_conseils.Font = New System.Drawing.Font("Comic Sans MS", 13.8!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Underline), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.gb_conseils.Location = New System.Drawing.Point(400, 443)
         Me.gb_conseils.Name = "gb_conseils"
@@ -295,7 +306,7 @@ Partial Class Resultat
         Me.cmd_enregistrer.Location = New System.Drawing.Point(670, 30)
         Me.cmd_enregistrer.Name = "cmd_enregistrer"
         Me.cmd_enregistrer.Size = New System.Drawing.Size(115, 72)
-        Me.cmd_enregistrer.TabIndex = 22
+        Me.cmd_enregistrer.TabIndex = 27
         Me.cmd_enregistrer.Text = "Enregistrer Résultats"
         Me.cmd_enregistrer.UseVisualStyleBackColor = False
         '
@@ -309,9 +320,64 @@ Partial Class Resultat
         Me.cmd_quitter.Margin = New System.Windows.Forms.Padding(2)
         Me.cmd_quitter.Name = "cmd_quitter"
         Me.cmd_quitter.Size = New System.Drawing.Size(80, 80)
-        Me.cmd_quitter.TabIndex = 23
+        Me.cmd_quitter.TabIndex = 28
         Me.cmd_quitter.TextAlign = System.Drawing.ContentAlignment.BottomCenter
         Me.cmd_quitter.UseVisualStyleBackColor = False
+        '
+        'bt_lec
+        '
+        Me.bt_lec.BackColor = System.Drawing.Color.White
+        Me.bt_lec.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.bt_lec.Image = Global.ProjetNF22.My.Resources.Resources.parleur1
+        Me.bt_lec.Location = New System.Drawing.Point(365, 44)
+        Me.bt_lec.Name = "bt_lec"
+        Me.bt_lec.Size = New System.Drawing.Size(60, 60)
+        Me.bt_lec.TabIndex = 26
+        Me.bt_lec.UseVisualStyleBackColor = False
+        '
+        'bt_ari
+        '
+        Me.bt_ari.BackColor = System.Drawing.Color.White
+        Me.bt_ari.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.bt_ari.Image = Global.ProjetNF22.My.Resources.Resources.parleur1
+        Me.bt_ari.Location = New System.Drawing.Point(281, 44)
+        Me.bt_ari.Name = "bt_ari"
+        Me.bt_ari.Size = New System.Drawing.Size(60, 60)
+        Me.bt_ari.TabIndex = 25
+        Me.bt_ari.UseVisualStyleBackColor = False
+        '
+        'bt_ponc
+        '
+        Me.bt_ponc.BackColor = System.Drawing.Color.White
+        Me.bt_ponc.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.bt_ponc.Image = Global.ProjetNF22.My.Resources.Resources.parleur1
+        Me.bt_ponc.Location = New System.Drawing.Point(196, 44)
+        Me.bt_ponc.Name = "bt_ponc"
+        Me.bt_ponc.Size = New System.Drawing.Size(60, 60)
+        Me.bt_ponc.TabIndex = 24
+        Me.bt_ponc.UseVisualStyleBackColor = False
+        '
+        'bt_voc
+        '
+        Me.bt_voc.BackColor = System.Drawing.Color.White
+        Me.bt_voc.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.bt_voc.Image = Global.ProjetNF22.My.Resources.Resources.parleur1
+        Me.bt_voc.Location = New System.Drawing.Point(115, 44)
+        Me.bt_voc.Name = "bt_voc"
+        Me.bt_voc.Size = New System.Drawing.Size(60, 60)
+        Me.bt_voc.TabIndex = 23
+        Me.bt_voc.UseVisualStyleBackColor = False
+        '
+        'bt_gram
+        '
+        Me.bt_gram.BackColor = System.Drawing.Color.White
+        Me.bt_gram.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.bt_gram.Image = Global.ProjetNF22.My.Resources.Resources.parleur1
+        Me.bt_gram.Location = New System.Drawing.Point(28, 44)
+        Me.bt_gram.Name = "bt_gram"
+        Me.bt_gram.Size = New System.Drawing.Size(60, 60)
+        Me.bt_gram.TabIndex = 22
+        Me.bt_gram.UseVisualStyleBackColor = False
         '
         'Resultat
         '
@@ -339,6 +405,7 @@ Partial Class Resultat
         CType(Me.Chart_Resultats, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox_duree.ResumeLayout(False)
         Me.GroupBox_duree.PerformLayout()
+        Me.gb_conseils.ResumeLayout(False)
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -368,4 +435,9 @@ Partial Class Resultat
     Friend WithEvents gb_conseils As GroupBox
     Friend WithEvents cmd_enregistrer As Button
     Friend WithEvents cmd_quitter As Button
+    Friend WithEvents bt_gram As Button
+    Friend WithEvents bt_lec As Button
+    Friend WithEvents bt_ari As Button
+    Friend WithEvents bt_ponc As Button
+    Friend WithEvents bt_voc As Button
 End Class

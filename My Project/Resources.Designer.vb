@@ -101,6 +101,24 @@ Namespace My.Resources
         End Property
         
         '''<summary>
+        '''  Recherche une ressource localisée de type System.IO.UnmanagedMemoryStream semblable à System.IO.MemoryStream.
+        '''</summary>
+        Friend ReadOnly Property Enregistrement() As System.IO.UnmanagedMemoryStream
+            Get
+                Return ResourceManager.GetStream("Enregistrement", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Recherche une ressource localisée de type System.IO.UnmanagedMemoryStream semblable à System.IO.MemoryStream.
+        '''</summary>
+        Friend ReadOnly Property gram_audio() As System.IO.UnmanagedMemoryStream
+            Get
+                Return ResourceManager.GetStream("gram_audio", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
         '''  Recherche une ressource localisée de type System.Drawing.Bitmap.
         '''</summary>
         Friend ReadOnly Property heure1() As System.Drawing.Bitmap
@@ -121,12 +139,40 @@ Namespace My.Resources
         End Property
         
         '''<summary>
+        '''  Recherche une ressource localisée de type System.IO.UnmanagedMemoryStream semblable à System.IO.MemoryStream.
+        '''</summary>
+        Friend ReadOnly Property lec_audio() As System.IO.UnmanagedMemoryStream
+            Get
+                Return ResourceManager.GetStream("lec_audio", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
         '''  Recherche une ressource localisée de type System.Drawing.Bitmap.
         '''</summary>
         Friend ReadOnly Property left_arrow() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("left-arrow", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Recherche une ressource localisée de type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property parleur1() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("parleur1", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Recherche une ressource localisée de type System.IO.UnmanagedMemoryStream semblable à System.IO.MemoryStream.
+        '''</summary>
+        Friend ReadOnly Property ponc_audio() As System.IO.UnmanagedMemoryStream
+            Get
+                Return ResourceManager.GetStream("ponc_audio", resourceCulture)
             End Get
         End Property
         
@@ -157,6 +203,15 @@ Namespace My.Resources
             Get
                 Dim obj As Object = ResourceManager.GetObject("test_background", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Recherche une ressource localisée de type System.IO.UnmanagedMemoryStream semblable à System.IO.MemoryStream.
+        '''</summary>
+        Friend ReadOnly Property voc_audio() As System.IO.UnmanagedMemoryStream
+            Get
+                Return ResourceManager.GetStream("voc_audio", resourceCulture)
             End Get
         End Property
     End Module

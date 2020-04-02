@@ -11,6 +11,10 @@
         MsgBox("Bouton NEXT, pour passer à la fenêtre suivante de questions")
     End Sub
 
+    Private Sub bt_voc_Click(sender As Object, e As EventArgs) Handles bt_voc.Click
+        MsgBox("Bouton CONSEILS, pour écouter un conseil sur la catégorie de question dans laquelle tu as mal répondu")
+    End Sub
+
     Private Sub cmd_aide_Click(sender As Object, e As EventArgs) Handles cmd_aide.Click
         MsgBox("Bouton INSTRUCTION, pour connaître la démarche pour répondre à la question")
     End Sub

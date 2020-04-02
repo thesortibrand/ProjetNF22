@@ -277,5 +277,23 @@
   <ItemGroup>
     <None Include="Resources\terminer.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Enregistrement.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gram_audio.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\voc_audio.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lec_audio.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ponc_audio.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\parleur1.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

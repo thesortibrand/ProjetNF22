@@ -121,31 +121,49 @@
   <data name="exit" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\exit.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="heure2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\heure2.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="terminer" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\terminer.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="heure1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\heure1.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="ponc_audio" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ponc_audio.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="left-arrow" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\left-arrow.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="right-arrow" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\right-arrow.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="test_background" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\test_background.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="3pommes" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\3pommes.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="2pommes" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\2pommes.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Enregistrement" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Enregistrement.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="4pommes" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\4pommes.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="terminer" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\terminer.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="test_background" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\test_background.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="gram_audio" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\gram_audio.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="2pommes" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\2pommes.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="right-arrow" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\right-arrow.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="heure2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\heure2.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="3pommes" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\3pommes.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="voc_audio" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\voc_audio.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="lec_audio" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\lec_audio.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="heure1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\heure1.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="parleur1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\parleur1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

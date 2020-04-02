@@ -25,23 +25,24 @@ Partial Class Manuel
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Manuel))
         Me.lbl_bienvenue = New System.Windows.Forms.Label()
         Me.gp_principe = New System.Windows.Forms.GroupBox()
-        Me.gb_aides = New System.Windows.Forms.GroupBox()
-        Me.lbl_1 = New System.Windows.Forms.Label()
-        Me.lbl_2 = New System.Windows.Forms.Label()
-        Me.lbl_3 = New System.Windows.Forms.Label()
-        Me.lbl_pt1 = New System.Windows.Forms.Label()
-        Me.lbl_pt2 = New System.Windows.Forms.Label()
         Me.lbl_pt3 = New System.Windows.Forms.Label()
-        Me.cmd_quitter = New System.Windows.Forms.Button()
-        Me.cmd_Next = New System.Windows.Forms.Button()
-        Me.cmd_Back = New System.Windows.Forms.Button()
-        Me.cmd_aide = New System.Windows.Forms.Button()
-        Me.cmd_enregistrer = New System.Windows.Forms.Button()
-        Me.lbl_salut = New System.Windows.Forms.Label()
-        Me.cmd_finaliser = New System.Windows.Forms.Button()
-        Me.lbl_cliques = New System.Windows.Forms.Label()
+        Me.lbl_pt2 = New System.Windows.Forms.Label()
+        Me.lbl_pt1 = New System.Windows.Forms.Label()
+        Me.lbl_3 = New System.Windows.Forms.Label()
+        Me.lbl_2 = New System.Windows.Forms.Label()
+        Me.lbl_1 = New System.Windows.Forms.Label()
+        Me.gb_aides = New System.Windows.Forms.GroupBox()
         Me.cmd_start = New System.Windows.Forms.Button()
+        Me.lbl_cliques = New System.Windows.Forms.Label()
+        Me.cmd_enregistrer = New System.Windows.Forms.Button()
+        Me.cmd_aide = New System.Windows.Forms.Button()
+        Me.lbl_salut = New System.Windows.Forms.Label()
         Me.cb_manual = New System.Windows.Forms.CheckBox()
+        Me.bt_voc = New System.Windows.Forms.Button()
+        Me.cmd_finaliser = New System.Windows.Forms.Button()
+        Me.cmd_Back = New System.Windows.Forms.Button()
+        Me.cmd_Next = New System.Windows.Forms.Button()
+        Me.cmd_quitter = New System.Windows.Forms.Button()
         Me.gp_principe.SuspendLayout()
         Me.gb_aides.SuspendLayout()
         Me.SuspendLayout()
@@ -72,8 +73,65 @@ Partial Class Manuel
         Me.gp_principe.TabStop = False
         Me.gp_principe.Text = "Principe de fonctionnement"
         '
+        'lbl_pt3
+        '
+        Me.lbl_pt3.AutoSize = True
+        Me.lbl_pt3.Location = New System.Drawing.Point(50, 80)
+        Me.lbl_pt3.Name = "lbl_pt3"
+        Me.lbl_pt3.Size = New System.Drawing.Size(635, 48)
+        Me.lbl_pt3.TabIndex = 8
+        Me.lbl_pt3.Text = "Termines le test et cliques sur: Enregistrer Résultats, pour les comparer avec" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "t" &
+    "es résultats antérieurs de différentes tentatives si ce n'est pas la première." & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) &
+    ""
+        '
+        'lbl_pt2
+        '
+        Me.lbl_pt2.AutoSize = True
+        Me.lbl_pt2.Location = New System.Drawing.Point(50, 50)
+        Me.lbl_pt2.Name = "lbl_pt2"
+        Me.lbl_pt2.Size = New System.Drawing.Size(574, 24)
+        Me.lbl_pt2.TabIndex = 6
+        Me.lbl_pt2.Text = "Réponds les questions et cliques sur: Instruction si tu as besoin d'aide."
+        '
+        'lbl_pt1
+        '
+        Me.lbl_pt1.AutoSize = True
+        Me.lbl_pt1.Location = New System.Drawing.Point(50, 20)
+        Me.lbl_pt1.Name = "lbl_pt1"
+        Me.lbl_pt1.Size = New System.Drawing.Size(628, 48)
+        Me.lbl_pt1.TabIndex = 4
+        Me.lbl_pt1.Text = "Dans la fenêtre de: Accueil, cliques sur le bouton vert pour démarrer le test." & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
+        '
+        'lbl_3
+        '
+        Me.lbl_3.AutoSize = True
+        Me.lbl_3.Location = New System.Drawing.Point(20, 80)
+        Me.lbl_3.Name = "lbl_3"
+        Me.lbl_3.Size = New System.Drawing.Size(26, 24)
+        Me.lbl_3.TabIndex = 7
+        Me.lbl_3.Text = "3)"
+        '
+        'lbl_2
+        '
+        Me.lbl_2.AutoSize = True
+        Me.lbl_2.Location = New System.Drawing.Point(20, 50)
+        Me.lbl_2.Name = "lbl_2"
+        Me.lbl_2.Size = New System.Drawing.Size(26, 24)
+        Me.lbl_2.TabIndex = 5
+        Me.lbl_2.Text = "2)"
+        '
+        'lbl_1
+        '
+        Me.lbl_1.AutoSize = True
+        Me.lbl_1.Location = New System.Drawing.Point(20, 20)
+        Me.lbl_1.Name = "lbl_1"
+        Me.lbl_1.Size = New System.Drawing.Size(24, 24)
+        Me.lbl_1.TabIndex = 3
+        Me.lbl_1.Text = "1)"
+        '
         'gb_aides
         '
+        Me.gb_aides.Controls.Add(Me.bt_voc)
         Me.gb_aides.Controls.Add(Me.cmd_start)
         Me.gb_aides.Controls.Add(Me.lbl_cliques)
         Me.gb_aides.Controls.Add(Me.cmd_finaliser)
@@ -90,61 +148,119 @@ Partial Class Manuel
         Me.gb_aides.TabStop = False
         Me.gb_aides.Text = "Aides visuelles"
         '
-        'lbl_1
+        'cmd_start
         '
-        Me.lbl_1.AutoSize = True
-        Me.lbl_1.Location = New System.Drawing.Point(20, 20)
-        Me.lbl_1.Name = "lbl_1"
-        Me.lbl_1.Size = New System.Drawing.Size(24, 24)
-        Me.lbl_1.TabIndex = 3
-        Me.lbl_1.Text = "1)"
+        Me.cmd_start.BackColor = System.Drawing.Color.LimeGreen
+        Me.cmd_start.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.cmd_start.Font = New System.Drawing.Font("Comic Sans MS", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.cmd_start.Location = New System.Drawing.Point(20, 154)
+        Me.cmd_start.Margin = New System.Windows.Forms.Padding(2)
+        Me.cmd_start.Name = "cmd_start"
+        Me.cmd_start.Size = New System.Drawing.Size(260, 80)
+        Me.cmd_start.TabIndex = 16
+        Me.cmd_start.Text = "Démarrer l'évaluation"
+        Me.cmd_start.UseVisualStyleBackColor = False
         '
-        'lbl_2
+        'lbl_cliques
         '
-        Me.lbl_2.AutoSize = True
-        Me.lbl_2.Location = New System.Drawing.Point(20, 50)
-        Me.lbl_2.Name = "lbl_2"
-        Me.lbl_2.Size = New System.Drawing.Size(26, 24)
-        Me.lbl_2.TabIndex = 5
-        Me.lbl_2.Text = "2)"
+        Me.lbl_cliques.AutoSize = True
+        Me.lbl_cliques.Location = New System.Drawing.Point(20, 20)
+        Me.lbl_cliques.Name = "lbl_cliques"
+        Me.lbl_cliques.Size = New System.Drawing.Size(437, 24)
+        Me.lbl_cliques.TabIndex = 10
+        Me.lbl_cliques.Text = "Cliques sur chaque bouton pour connaître sa fonction."
         '
-        'lbl_3
+        'cmd_enregistrer
         '
-        Me.lbl_3.AutoSize = True
-        Me.lbl_3.Location = New System.Drawing.Point(20, 80)
-        Me.lbl_3.Name = "lbl_3"
-        Me.lbl_3.Size = New System.Drawing.Size(26, 24)
-        Me.lbl_3.TabIndex = 7
-        Me.lbl_3.Text = "3)"
+        Me.cmd_enregistrer.BackColor = System.Drawing.Color.LimeGreen
+        Me.cmd_enregistrer.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.cmd_enregistrer.Font = New System.Drawing.Font("Comic Sans MS", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.cmd_enregistrer.Location = New System.Drawing.Point(342, 160)
+        Me.cmd_enregistrer.Name = "cmd_enregistrer"
+        Me.cmd_enregistrer.Size = New System.Drawing.Size(115, 72)
+        Me.cmd_enregistrer.TabIndex = 17
+        Me.cmd_enregistrer.Text = "Enregistrer Résultats"
+        Me.cmd_enregistrer.UseVisualStyleBackColor = False
         '
-        'lbl_pt1
+        'cmd_aide
         '
-        Me.lbl_pt1.AutoSize = True
-        Me.lbl_pt1.Location = New System.Drawing.Point(50, 20)
-        Me.lbl_pt1.Name = "lbl_pt1"
-        Me.lbl_pt1.Size = New System.Drawing.Size(628, 48)
-        Me.lbl_pt1.TabIndex = 4
-        Me.lbl_pt1.Text = "Dans la fenêtre de: Accueil, cliques sur le bouton vert pour démarrer le test." & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
+        Me.cmd_aide.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.cmd_aide.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.cmd_aide.Location = New System.Drawing.Point(496, 63)
+        Me.cmd_aide.Name = "cmd_aide"
+        Me.cmd_aide.Size = New System.Drawing.Size(109, 33)
+        Me.cmd_aide.TabIndex = 15
+        Me.cmd_aide.Text = "Instruction"
+        Me.cmd_aide.UseVisualStyleBackColor = False
         '
-        'lbl_pt2
+        'lbl_salut
         '
-        Me.lbl_pt2.AutoSize = True
-        Me.lbl_pt2.Location = New System.Drawing.Point(50, 50)
-        Me.lbl_pt2.Name = "lbl_pt2"
-        Me.lbl_pt2.Size = New System.Drawing.Size(574, 24)
-        Me.lbl_pt2.TabIndex = 6
-        Me.lbl_pt2.Text = "Réponds les questions et cliques sur: Instruction si tu as besoin d'aide."
+        Me.lbl_salut.AutoSize = True
+        Me.lbl_salut.Font = New System.Drawing.Font("Comic Sans MS", 10.2!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbl_salut.Location = New System.Drawing.Point(80, 75)
+        Me.lbl_salut.Name = "lbl_salut"
+        Me.lbl_salut.Size = New System.Drawing.Size(787, 96)
+        Me.lbl_salut.TabIndex = 1
+        Me.lbl_salut.Text = resources.GetString("lbl_salut.Text")
         '
-        'lbl_pt3
+        'cb_manual
         '
-        Me.lbl_pt3.AutoSize = True
-        Me.lbl_pt3.Location = New System.Drawing.Point(50, 80)
-        Me.lbl_pt3.Name = "lbl_pt3"
-        Me.lbl_pt3.Size = New System.Drawing.Size(635, 48)
-        Me.lbl_pt3.TabIndex = 8
-        Me.lbl_pt3.Text = "Termines le test et cliques sur: Enregistrer Résultats, pour les comparer avec" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "t" &
-    "es résultats antérieurs de différentes tentatives si ce n'est pas la première." & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) &
-    ""
+        Me.cb_manual.AutoSize = True
+        Me.cb_manual.Font = New System.Drawing.Font("Comic Sans MS", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.cb_manual.Location = New System.Drawing.Point(80, 600)
+        Me.cb_manual.Name = "cb_manual"
+        Me.cb_manual.Size = New System.Drawing.Size(407, 28)
+        Me.cb_manual.TabIndex = 19
+        Me.cb_manual.Text = "J'ai lu le manuel et je suis prêt(e) pour le test."
+        Me.cb_manual.UseVisualStyleBackColor = True
+        '
+        'bt_voc
+        '
+        Me.bt_voc.BackColor = System.Drawing.Color.White
+        Me.bt_voc.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.bt_voc.Image = Global.ProjetNF22.My.Resources.Resources.parleur1
+        Me.bt_voc.Location = New System.Drawing.Point(408, 63)
+        Me.bt_voc.Name = "bt_voc"
+        Me.bt_voc.Size = New System.Drawing.Size(60, 60)
+        Me.bt_voc.TabIndex = 14
+        Me.bt_voc.UseVisualStyleBackColor = False
+        '
+        'cmd_finaliser
+        '
+        Me.cmd_finaliser.BackColor = System.Drawing.Color.White
+        Me.cmd_finaliser.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.cmd_finaliser.Image = Global.ProjetNF22.My.Resources.Resources.terminer
+        Me.cmd_finaliser.Location = New System.Drawing.Point(511, 164)
+        Me.cmd_finaliser.Name = "cmd_finaliser"
+        Me.cmd_finaliser.Size = New System.Drawing.Size(67, 68)
+        Me.cmd_finaliser.TabIndex = 18
+        Me.cmd_finaliser.TextAlign = System.Drawing.ContentAlignment.BottomCenter
+        Me.cmd_finaliser.UseVisualStyleBackColor = False
+        '
+        'cmd_Back
+        '
+        Me.cmd_Back.BackColor = System.Drawing.Color.White
+        Me.cmd_Back.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.cmd_Back.Image = CType(resources.GetObject("cmd_Back.Image"), System.Drawing.Image)
+        Me.cmd_Back.Location = New System.Drawing.Point(220, 63)
+        Me.cmd_Back.Name = "cmd_Back"
+        Me.cmd_Back.Size = New System.Drawing.Size(60, 60)
+        Me.cmd_Back.TabIndex = 12
+        Me.cmd_Back.Text = "" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
+        Me.cmd_Back.TextAlign = System.Drawing.ContentAlignment.BottomCenter
+        Me.cmd_Back.UseVisualStyleBackColor = False
+        '
+        'cmd_Next
+        '
+        Me.cmd_Next.BackColor = System.Drawing.Color.White
+        Me.cmd_Next.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.cmd_Next.Image = Global.ProjetNF22.My.Resources.Resources.right_arrow
+        Me.cmd_Next.Location = New System.Drawing.Point(315, 63)
+        Me.cmd_Next.Name = "cmd_Next"
+        Me.cmd_Next.Size = New System.Drawing.Size(60, 60)
+        Me.cmd_Next.TabIndex = 13
+        Me.cmd_Next.TextAlign = System.Drawing.ContentAlignment.BottomCenter
+        Me.cmd_Next.UseVisualStyleBackColor = False
         '
         'cmd_quitter
         '
@@ -160,116 +276,13 @@ Partial Class Manuel
         Me.cmd_quitter.TextAlign = System.Drawing.ContentAlignment.BottomCenter
         Me.cmd_quitter.UseVisualStyleBackColor = False
         '
-        'cmd_Next
-        '
-        Me.cmd_Next.BackColor = System.Drawing.Color.White
-        Me.cmd_Next.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.cmd_Next.Image = Global.ProjetNF22.My.Resources.Resources.right_arrow
-        Me.cmd_Next.Location = New System.Drawing.Point(358, 63)
-        Me.cmd_Next.Name = "cmd_Next"
-        Me.cmd_Next.Size = New System.Drawing.Size(60, 60)
-        Me.cmd_Next.TabIndex = 13
-        Me.cmd_Next.TextAlign = System.Drawing.ContentAlignment.BottomCenter
-        Me.cmd_Next.UseVisualStyleBackColor = False
-        '
-        'cmd_Back
-        '
-        Me.cmd_Back.BackColor = System.Drawing.Color.White
-        Me.cmd_Back.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.cmd_Back.Image = CType(resources.GetObject("cmd_Back.Image"), System.Drawing.Image)
-        Me.cmd_Back.Location = New System.Drawing.Point(238, 63)
-        Me.cmd_Back.Name = "cmd_Back"
-        Me.cmd_Back.Size = New System.Drawing.Size(60, 60)
-        Me.cmd_Back.TabIndex = 12
-        Me.cmd_Back.Text = "" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
-        Me.cmd_Back.TextAlign = System.Drawing.ContentAlignment.BottomCenter
-        Me.cmd_Back.UseVisualStyleBackColor = False
-        '
-        'cmd_aide
-        '
-        Me.cmd_aide.BackColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.cmd_aide.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.cmd_aide.Location = New System.Drawing.Point(469, 68)
-        Me.cmd_aide.Name = "cmd_aide"
-        Me.cmd_aide.Size = New System.Drawing.Size(109, 33)
-        Me.cmd_aide.TabIndex = 14
-        Me.cmd_aide.Text = "Instruction"
-        Me.cmd_aide.UseVisualStyleBackColor = False
-        '
-        'cmd_enregistrer
-        '
-        Me.cmd_enregistrer.BackColor = System.Drawing.Color.LimeGreen
-        Me.cmd_enregistrer.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.cmd_enregistrer.Font = New System.Drawing.Font("Comic Sans MS", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.cmd_enregistrer.Location = New System.Drawing.Point(331, 160)
-        Me.cmd_enregistrer.Name = "cmd_enregistrer"
-        Me.cmd_enregistrer.Size = New System.Drawing.Size(115, 72)
-        Me.cmd_enregistrer.TabIndex = 16
-        Me.cmd_enregistrer.Text = "Enregistrer Résultats"
-        Me.cmd_enregistrer.UseVisualStyleBackColor = False
-        '
-        'lbl_salut
-        '
-        Me.lbl_salut.AutoSize = True
-        Me.lbl_salut.Font = New System.Drawing.Font("Comic Sans MS", 10.2!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lbl_salut.Location = New System.Drawing.Point(80, 75)
-        Me.lbl_salut.Name = "lbl_salut"
-        Me.lbl_salut.Size = New System.Drawing.Size(787, 96)
-        Me.lbl_salut.TabIndex = 1
-        Me.lbl_salut.Text = resources.GetString("lbl_salut.Text")
-        '
-        'cmd_finaliser
-        '
-        Me.cmd_finaliser.BackColor = System.Drawing.Color.White
-        Me.cmd_finaliser.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.cmd_finaliser.Image = Global.ProjetNF22.My.Resources.Resources.terminer
-        Me.cmd_finaliser.Location = New System.Drawing.Point(496, 160)
-        Me.cmd_finaliser.Name = "cmd_finaliser"
-        Me.cmd_finaliser.Size = New System.Drawing.Size(67, 68)
-        Me.cmd_finaliser.TabIndex = 17
-        Me.cmd_finaliser.TextAlign = System.Drawing.ContentAlignment.BottomCenter
-        Me.cmd_finaliser.UseVisualStyleBackColor = False
-        '
-        'lbl_cliques
-        '
-        Me.lbl_cliques.AutoSize = True
-        Me.lbl_cliques.Location = New System.Drawing.Point(20, 20)
-        Me.lbl_cliques.Name = "lbl_cliques"
-        Me.lbl_cliques.Size = New System.Drawing.Size(437, 24)
-        Me.lbl_cliques.TabIndex = 10
-        Me.lbl_cliques.Text = "Cliques sur chaque bouton pour connaître sa fonction."
-        '
-        'cmd_start
-        '
-        Me.cmd_start.BackColor = System.Drawing.Color.LimeGreen
-        Me.cmd_start.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.cmd_start.Font = New System.Drawing.Font("Comic Sans MS", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.cmd_start.Location = New System.Drawing.Point(20, 154)
-        Me.cmd_start.Margin = New System.Windows.Forms.Padding(2)
-        Me.cmd_start.Name = "cmd_start"
-        Me.cmd_start.Size = New System.Drawing.Size(260, 80)
-        Me.cmd_start.TabIndex = 15
-        Me.cmd_start.Text = "Démarrer l'évaluation"
-        Me.cmd_start.UseVisualStyleBackColor = False
-        '
-        'cb_manual
-        '
-        Me.cb_manual.AutoSize = True
-        Me.cb_manual.Font = New System.Drawing.Font("Comic Sans MS", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.cb_manual.Location = New System.Drawing.Point(80, 600)
-        Me.cb_manual.Name = "cb_manual"
-        Me.cb_manual.Size = New System.Drawing.Size(407, 28)
-        Me.cb_manual.TabIndex = 18
-        Me.cb_manual.Text = "J'ai lu le manuel et je suis prêt(e) pour le test."
-        Me.cb_manual.UseVisualStyleBackColor = True
-        '
         'Manuel
         '
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit
         Me.AutoScroll = True
         Me.AutoSize = True
         Me.BackColor = System.Drawing.SystemColors.GradientActiveCaption
-        Me.ClientSize = New System.Drawing.Size(778, 684)
+        Me.ClientSize = New System.Drawing.Size(778, 768)
         Me.ControlBox = False
         Me.Controls.Add(Me.cb_manual)
         Me.Controls.Add(Me.lbl_salut)
@@ -310,4 +323,5 @@ Partial Class Manuel
     Friend WithEvents lbl_cliques As Label
     Friend WithEvents cmd_start As Button
     Friend WithEvents cb_manual As CheckBox
+    Friend WithEvents bt_voc As Button
 End Class
