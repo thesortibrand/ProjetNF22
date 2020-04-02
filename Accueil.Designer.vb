@@ -121,9 +121,9 @@ Partial Class Accueil
         Me.lbl_nouveau.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.lbl_nouveau.Name = "lbl_nouveau"
         Me.lbl_nouveau.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.lbl_nouveau.Size = New System.Drawing.Size(169, 48)
+        Me.lbl_nouveau.Size = New System.Drawing.Size(177, 48)
         Me.lbl_nouveau.TabIndex = 2
-        Me.lbl_nouveau.Text = "Nouvel utilisateur?" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Clique sur ""Manuel""."
+        Me.lbl_nouveau.Text = "Nouvel utilisateur?" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Cliques sur ""Manuel""."
         Me.lbl_nouveau.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
         'Accueil

@@ -505,7 +505,7 @@ Partial Class Questions3
         Me.AutoScroll = True
         Me.AutoSize = True
         Me.BackColor = System.Drawing.SystemColors.GradientActiveCaption
-        Me.ClientSize = New System.Drawing.Size(882, 453)
+        Me.ClientSize = New System.Drawing.Size(882, 469)
         Me.ControlBox = False
         Me.Controls.Add(Me.cmd_aideQ5)
         Me.Controls.Add(Me.lbl_secQ3)

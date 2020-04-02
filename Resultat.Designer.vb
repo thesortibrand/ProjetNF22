@@ -22,10 +22,11 @@ Partial Class Resultat
     'Ne la modifiez pas à l'aide de l'éditeur de code.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Resultat))
         Dim ChartArea1 As System.Windows.Forms.DataVisualization.Charting.ChartArea = New System.Windows.Forms.DataVisualization.Charting.ChartArea()
         Dim Legend1 As System.Windows.Forms.DataVisualization.Charting.Legend = New System.Windows.Forms.DataVisualization.Charting.Legend()
         Dim Series1 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Resultat))
+        Dim Series2 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
         Me.lbl_score = New System.Windows.Forms.Label()
         Me.txtbox_score = New System.Windows.Forms.TextBox()
         Me.lbl_10 = New System.Windows.Forms.Label()
@@ -42,23 +43,23 @@ Partial Class Resultat
         Me.lbl_math = New System.Windows.Forms.Label()
         Me.lbl_voc = New System.Windows.Forms.Label()
         Me.lbl_gram = New System.Windows.Forms.Label()
-        Me.Chart_Resultats = New System.Windows.Forms.DataVisualization.Charting.Chart()
         Me.lbl_minRes = New System.Windows.Forms.Label()
         Me.lbl_deuxptsRes = New System.Windows.Forms.Label()
         Me.lbl_secRes = New System.Windows.Forms.Label()
         Me.GroupBox_duree = New System.Windows.Forms.GroupBox()
         Me.gb_conseils = New System.Windows.Forms.GroupBox()
-        Me.cmd_enregistrer = New System.Windows.Forms.Button()
-        Me.cmd_quitter = New System.Windows.Forms.Button()
         Me.bt_lec = New System.Windows.Forms.Button()
         Me.bt_ari = New System.Windows.Forms.Button()
         Me.bt_ponc = New System.Windows.Forms.Button()
         Me.bt_voc = New System.Windows.Forms.Button()
         Me.bt_gram = New System.Windows.Forms.Button()
+        Me.cmd_enregistrer = New System.Windows.Forms.Button()
+        Me.cmd_quitter = New System.Windows.Forms.Button()
+        Me.Chart_Resultats = New System.Windows.Forms.DataVisualization.Charting.Chart()
         Me.groupbox_categories.SuspendLayout()
-        CType(Me.Chart_Resultats, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox_duree.SuspendLayout()
         Me.gb_conseils.SuspendLayout()
+        CType(Me.Chart_Resultats, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'lbl_score
@@ -222,22 +223,6 @@ Partial Class Resultat
         Me.lbl_gram.TabIndex = 5
         Me.lbl_gram.Text = "Grammaire"
         '
-        'Chart_Resultats
-        '
-        ChartArea1.Name = "ChartArea1"
-        Me.Chart_Resultats.ChartAreas.Add(ChartArea1)
-        Legend1.Name = "Legend1"
-        Me.Chart_Resultats.Legends.Add(Legend1)
-        Me.Chart_Resultats.Location = New System.Drawing.Point(400, 140)
-        Me.Chart_Resultats.Name = "Chart_Resultats"
-        Series1.ChartArea = "ChartArea1"
-        Series1.Legend = "Legend1"
-        Series1.Name = "Categories"
-        Me.Chart_Resultats.Series.Add(Series1)
-        Me.Chart_Resultats.Size = New System.Drawing.Size(454, 258)
-        Me.Chart_Resultats.TabIndex = 20
-        Me.Chart_Resultats.Text = "Chart_Resultats"
-        '
         'lbl_minRes
         '
         Me.lbl_minRes.AutoSize = True
@@ -298,6 +283,66 @@ Partial Class Resultat
         Me.gb_conseils.TabStop = False
         Me.gb_conseils.Text = "Conseils"
         '
+        'bt_lec
+        '
+        Me.bt_lec.BackColor = System.Drawing.Color.White
+        Me.bt_lec.Enabled = False
+        Me.bt_lec.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.bt_lec.Image = Global.ProjetNF22.My.Resources.Resources.parleur1
+        Me.bt_lec.Location = New System.Drawing.Point(365, 44)
+        Me.bt_lec.Name = "bt_lec"
+        Me.bt_lec.Size = New System.Drawing.Size(60, 60)
+        Me.bt_lec.TabIndex = 26
+        Me.bt_lec.UseVisualStyleBackColor = False
+        '
+        'bt_ari
+        '
+        Me.bt_ari.BackColor = System.Drawing.Color.White
+        Me.bt_ari.Enabled = False
+        Me.bt_ari.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.bt_ari.Image = Global.ProjetNF22.My.Resources.Resources.parleur1
+        Me.bt_ari.Location = New System.Drawing.Point(281, 44)
+        Me.bt_ari.Name = "bt_ari"
+        Me.bt_ari.Size = New System.Drawing.Size(60, 60)
+        Me.bt_ari.TabIndex = 25
+        Me.bt_ari.UseVisualStyleBackColor = False
+        '
+        'bt_ponc
+        '
+        Me.bt_ponc.BackColor = System.Drawing.Color.White
+        Me.bt_ponc.Enabled = False
+        Me.bt_ponc.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.bt_ponc.Image = Global.ProjetNF22.My.Resources.Resources.parleur1
+        Me.bt_ponc.Location = New System.Drawing.Point(196, 44)
+        Me.bt_ponc.Name = "bt_ponc"
+        Me.bt_ponc.Size = New System.Drawing.Size(60, 60)
+        Me.bt_ponc.TabIndex = 24
+        Me.bt_ponc.UseVisualStyleBackColor = False
+        '
+        'bt_voc
+        '
+        Me.bt_voc.BackColor = System.Drawing.Color.White
+        Me.bt_voc.Enabled = False
+        Me.bt_voc.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.bt_voc.Image = Global.ProjetNF22.My.Resources.Resources.parleur1
+        Me.bt_voc.Location = New System.Drawing.Point(115, 44)
+        Me.bt_voc.Name = "bt_voc"
+        Me.bt_voc.Size = New System.Drawing.Size(60, 60)
+        Me.bt_voc.TabIndex = 23
+        Me.bt_voc.UseVisualStyleBackColor = False
+        '
+        'bt_gram
+        '
+        Me.bt_gram.BackColor = System.Drawing.Color.White
+        Me.bt_gram.Enabled = False
+        Me.bt_gram.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.bt_gram.Image = Global.ProjetNF22.My.Resources.Resources.parleur1
+        Me.bt_gram.Location = New System.Drawing.Point(28, 44)
+        Me.bt_gram.Name = "bt_gram"
+        Me.bt_gram.Size = New System.Drawing.Size(60, 60)
+        Me.bt_gram.TabIndex = 22
+        Me.bt_gram.UseVisualStyleBackColor = False
+        '
         'cmd_enregistrer
         '
         Me.cmd_enregistrer.BackColor = System.Drawing.Color.LimeGreen
@@ -324,60 +369,25 @@ Partial Class Resultat
         Me.cmd_quitter.TextAlign = System.Drawing.ContentAlignment.BottomCenter
         Me.cmd_quitter.UseVisualStyleBackColor = False
         '
-        'bt_lec
+        'Chart_Resultats
         '
-        Me.bt_lec.BackColor = System.Drawing.Color.White
-        Me.bt_lec.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.bt_lec.Image = Global.ProjetNF22.My.Resources.Resources.parleur1
-        Me.bt_lec.Location = New System.Drawing.Point(365, 44)
-        Me.bt_lec.Name = "bt_lec"
-        Me.bt_lec.Size = New System.Drawing.Size(60, 60)
-        Me.bt_lec.TabIndex = 26
-        Me.bt_lec.UseVisualStyleBackColor = False
-        '
-        'bt_ari
-        '
-        Me.bt_ari.BackColor = System.Drawing.Color.White
-        Me.bt_ari.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.bt_ari.Image = Global.ProjetNF22.My.Resources.Resources.parleur1
-        Me.bt_ari.Location = New System.Drawing.Point(281, 44)
-        Me.bt_ari.Name = "bt_ari"
-        Me.bt_ari.Size = New System.Drawing.Size(60, 60)
-        Me.bt_ari.TabIndex = 25
-        Me.bt_ari.UseVisualStyleBackColor = False
-        '
-        'bt_ponc
-        '
-        Me.bt_ponc.BackColor = System.Drawing.Color.White
-        Me.bt_ponc.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.bt_ponc.Image = Global.ProjetNF22.My.Resources.Resources.parleur1
-        Me.bt_ponc.Location = New System.Drawing.Point(196, 44)
-        Me.bt_ponc.Name = "bt_ponc"
-        Me.bt_ponc.Size = New System.Drawing.Size(60, 60)
-        Me.bt_ponc.TabIndex = 24
-        Me.bt_ponc.UseVisualStyleBackColor = False
-        '
-        'bt_voc
-        '
-        Me.bt_voc.BackColor = System.Drawing.Color.White
-        Me.bt_voc.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.bt_voc.Image = Global.ProjetNF22.My.Resources.Resources.parleur1
-        Me.bt_voc.Location = New System.Drawing.Point(115, 44)
-        Me.bt_voc.Name = "bt_voc"
-        Me.bt_voc.Size = New System.Drawing.Size(60, 60)
-        Me.bt_voc.TabIndex = 23
-        Me.bt_voc.UseVisualStyleBackColor = False
-        '
-        'bt_gram
-        '
-        Me.bt_gram.BackColor = System.Drawing.Color.White
-        Me.bt_gram.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.bt_gram.Image = Global.ProjetNF22.My.Resources.Resources.parleur1
-        Me.bt_gram.Location = New System.Drawing.Point(28, 44)
-        Me.bt_gram.Name = "bt_gram"
-        Me.bt_gram.Size = New System.Drawing.Size(60, 60)
-        Me.bt_gram.TabIndex = 22
-        Me.bt_gram.UseVisualStyleBackColor = False
+        ChartArea1.Name = "ChartArea1"
+        Me.Chart_Resultats.ChartAreas.Add(ChartArea1)
+        Legend1.Name = "Legend1"
+        Me.Chart_Resultats.Legends.Add(Legend1)
+        Me.Chart_Resultats.Location = New System.Drawing.Point(376, 140)
+        Me.Chart_Resultats.Name = "Chart_Resultats"
+        Series1.ChartArea = "ChartArea1"
+        Series1.Legend = "Legend1"
+        Series1.Name = "Series1"
+        Series2.ChartArea = "ChartArea1"
+        Series2.Legend = "Legend1"
+        Series2.Name = "Series2"
+        Me.Chart_Resultats.Series.Add(Series1)
+        Me.Chart_Resultats.Series.Add(Series2)
+        Me.Chart_Resultats.Size = New System.Drawing.Size(478, 256)
+        Me.Chart_Resultats.TabIndex = 20
+        Me.Chart_Resultats.Text = "Résultats"
         '
         'Resultat
         '
@@ -387,11 +397,11 @@ Partial Class Resultat
         Me.BackColor = System.Drawing.SystemColors.GradientActiveCaption
         Me.ClientSize = New System.Drawing.Size(928, 619)
         Me.ControlBox = False
+        Me.Controls.Add(Me.Chart_Resultats)
         Me.Controls.Add(Me.cmd_quitter)
         Me.Controls.Add(Me.cmd_enregistrer)
         Me.Controls.Add(Me.gb_conseils)
         Me.Controls.Add(Me.GroupBox_duree)
-        Me.Controls.Add(Me.Chart_Resultats)
         Me.Controls.Add(Me.groupbox_categories)
         Me.Controls.Add(Me.lbl_10)
         Me.Controls.Add(Me.txtbox_score)
@@ -402,10 +412,10 @@ Partial Class Resultat
         Me.Text = "Resultats"
         Me.groupbox_categories.ResumeLayout(False)
         Me.groupbox_categories.PerformLayout()
-        CType(Me.Chart_Resultats, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox_duree.ResumeLayout(False)
         Me.GroupBox_duree.PerformLayout()
         Me.gb_conseils.ResumeLayout(False)
+        CType(Me.Chart_Resultats, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -427,7 +437,6 @@ Partial Class Resultat
     Friend WithEvents lbl_voc As Label
     Friend WithEvents lbl_gram As Label
     Friend WithEvents lbl_lec As Label
-    Friend WithEvents Chart_Resultats As DataVisualization.Charting.Chart
     Friend WithEvents lbl_minRes As Label
     Friend WithEvents lbl_deuxptsRes As Label
     Friend WithEvents lbl_secRes As Label
@@ -440,4 +449,5 @@ Partial Class Resultat
     Friend WithEvents bt_ari As Button
     Friend WithEvents bt_ponc As Button
     Friend WithEvents bt_voc As Button
+    Friend WithEvents Chart_Resultats As DataVisualization.Charting.Chart
 End Class

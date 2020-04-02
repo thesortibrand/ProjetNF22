@@ -177,6 +177,15 @@ Namespace My.Resources
         End Property
         
         '''<summary>
+        '''  Recherche une chaîne localisée semblable à .
+        '''</summary>
+        Friend ReadOnly Property resultats() As String
+            Get
+                Return ResourceManager.GetString("resultats", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
         '''  Recherche une ressource localisée de type System.Drawing.Bitmap.
         '''</summary>
         Friend ReadOnly Property right_arrow() As System.Drawing.Bitmap

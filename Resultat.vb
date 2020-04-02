@@ -1,5 +1,7 @@
 ﻿Public Class Resultat
     Dim gram, voc, ponc, ari, lec As Integer
+    Dim i As Integer
+    Dim resultats_enregistres(0 To 4) As String
 
     Private Sub Resultat_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         If minutes < 0 Then
@@ -26,11 +28,11 @@
         txtbox_lec.Text = lec & " %"
 
 
-        Me.Chart_Resultats.Series("Categories").Points.AddXY("Grammaire", gram)
-        Me.Chart_Resultats.Series("Categories").Points.AddXY("Vocabulaire", voc)
-        Me.Chart_Resultats.Series("Categories").Points.AddXY("Ponctuation", ponc)
-        Me.Chart_Resultats.Series("Categories").Points.AddXY("Arithmétique", ari)
-        Me.Chart_Resultats.Series("Categories").Points.AddXY("Horloge", lec)
+        Me.Chart_Resultats.Series("Series1").Points.AddXY("Grammaire", gram)
+        Me.Chart_Resultats.Series("Series1").Points.AddXY("Vocabulaire", voc)
+        Me.Chart_Resultats.Series("Series1").Points.AddXY("Ponctuation", ponc)
+        Me.Chart_Resultats.Series("Series1").Points.AddXY("Arithmétique", ari)
+        Me.Chart_Resultats.Series("Series1").Points.AddXY("Horloge", lec)
 
         If ((n_ari / 4) * 100) <> 100 Then
             bt_ari.Enabled = True
@@ -52,8 +54,24 @@
             bt_voc.Enabled = True
         End If
 
+        'Code pour lire des résultats enregistrés avant
+        FileOpen(1, "C:\Users\utcpret\Desktop\NF22\ProjetNF22\Resources\resultats.txt", OpenMode.Input)
+        i = 0
+        Do While Not EOF(1)
+            Input(1, resultats_enregistres(i))
+            i = i + 1
+        Loop
+        FileClose(1)
+
+        Me.Chart_Resultats.Series("Series2").Points.AddXY("Grammaire", resultats_enregistres(0))
+        Me.Chart_Resultats.Series("Series2").Points.AddXY("Vocabulaire", resultats_enregistres(1))
+        Me.Chart_Resultats.Series("Series2").Points.AddXY("Ponctuation", resultats_enregistres(2))
+        Me.Chart_Resultats.Series("Series2").Points.AddXY("Arithmétique", resultats_enregistres(3))
+        Me.Chart_Resultats.Series("Series2").Points.AddXY("Horloge", resultats_enregistres(4))
+
     End Sub
 
+    'Code pour ajouter audio aux Conseils
     Private Sub bt_voc_Click(sender As Object, e As EventArgs) Handles bt_voc.Click
         Dim audio_voc As New System.Media.SoundPlayer(My.Resources.voc_audio)
         audio_voc.Play()
@@ -80,7 +98,17 @@
     End Sub
 
     Private Sub cmd_enregistrer_Click(sender As Object, e As EventArgs) Handles cmd_enregistrer.Click
-
+        'Code pour écrire dans le fichier et enregistrer les résultats nouveaux
+        Dim obj As Object
+        Dim fichier As Object
+        obj = CreateObject("Scripting.FileSystemObject")
+        fichier = obj.CreateTextFile("C:\Users\utcpret\Desktop\NF22\ProjetNF22\Resources\resultats.txt")
+        fichier.WriteLine(gram)
+        fichier.WriteLine(voc)
+        fichier.WriteLine(ponc)
+        fichier.WriteLine(ari)
+        fichier.WriteLine(lec)
+        fichier.Close()
     End Sub
 
     Private Sub cmd_Quitter_Click(sender As Object, e As EventArgs) Handles cmd_quitter.Click

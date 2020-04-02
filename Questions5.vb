@@ -86,11 +86,11 @@
             n_ari -= 2
         End If
 
-        If n_ari = 1 Then
+        If n_ari = 3 Then
             n_ari -= 3
         End If
 
-        If n_ari = 1 Then
+        If n_ari = 4 Then
             n_ari -= 4
         End If
 

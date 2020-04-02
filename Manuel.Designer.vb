@@ -32,17 +32,17 @@ Partial Class Manuel
         Me.lbl_2 = New System.Windows.Forms.Label()
         Me.lbl_1 = New System.Windows.Forms.Label()
         Me.gb_aides = New System.Windows.Forms.GroupBox()
+        Me.bt_voc = New System.Windows.Forms.Button()
         Me.cmd_start = New System.Windows.Forms.Button()
         Me.lbl_cliques = New System.Windows.Forms.Label()
+        Me.cmd_finaliser = New System.Windows.Forms.Button()
         Me.cmd_enregistrer = New System.Windows.Forms.Button()
         Me.cmd_aide = New System.Windows.Forms.Button()
-        Me.lbl_salut = New System.Windows.Forms.Label()
-        Me.cb_manual = New System.Windows.Forms.CheckBox()
-        Me.bt_voc = New System.Windows.Forms.Button()
-        Me.cmd_finaliser = New System.Windows.Forms.Button()
         Me.cmd_Back = New System.Windows.Forms.Button()
         Me.cmd_Next = New System.Windows.Forms.Button()
         Me.cmd_quitter = New System.Windows.Forms.Button()
+        Me.lbl_salut = New System.Windows.Forms.Label()
+        Me.cb_manual = New System.Windows.Forms.CheckBox()
         Me.gp_principe.SuspendLayout()
         Me.gb_aides.SuspendLayout()
         Me.SuspendLayout()
@@ -148,6 +148,17 @@ Partial Class Manuel
         Me.gb_aides.TabStop = False
         Me.gb_aides.Text = "Aides visuelles"
         '
+        'bt_voc
+        '
+        Me.bt_voc.BackColor = System.Drawing.Color.White
+        Me.bt_voc.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.bt_voc.Image = Global.ProjetNF22.My.Resources.Resources.parleur1
+        Me.bt_voc.Location = New System.Drawing.Point(408, 63)
+        Me.bt_voc.Name = "bt_voc"
+        Me.bt_voc.Size = New System.Drawing.Size(60, 60)
+        Me.bt_voc.TabIndex = 14
+        Me.bt_voc.UseVisualStyleBackColor = False
+        '
         'cmd_start
         '
         Me.cmd_start.BackColor = System.Drawing.Color.LimeGreen
@@ -169,6 +180,18 @@ Partial Class Manuel
         Me.lbl_cliques.Size = New System.Drawing.Size(437, 24)
         Me.lbl_cliques.TabIndex = 10
         Me.lbl_cliques.Text = "Cliques sur chaque bouton pour connaître sa fonction."
+        '
+        'cmd_finaliser
+        '
+        Me.cmd_finaliser.BackColor = System.Drawing.Color.White
+        Me.cmd_finaliser.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.cmd_finaliser.Image = Global.ProjetNF22.My.Resources.Resources.terminer
+        Me.cmd_finaliser.Location = New System.Drawing.Point(511, 164)
+        Me.cmd_finaliser.Name = "cmd_finaliser"
+        Me.cmd_finaliser.Size = New System.Drawing.Size(67, 68)
+        Me.cmd_finaliser.TabIndex = 18
+        Me.cmd_finaliser.TextAlign = System.Drawing.ContentAlignment.BottomCenter
+        Me.cmd_finaliser.UseVisualStyleBackColor = False
         '
         'cmd_enregistrer
         '
@@ -192,50 +215,6 @@ Partial Class Manuel
         Me.cmd_aide.TabIndex = 15
         Me.cmd_aide.Text = "Instruction"
         Me.cmd_aide.UseVisualStyleBackColor = False
-        '
-        'lbl_salut
-        '
-        Me.lbl_salut.AutoSize = True
-        Me.lbl_salut.Font = New System.Drawing.Font("Comic Sans MS", 10.2!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lbl_salut.Location = New System.Drawing.Point(80, 75)
-        Me.lbl_salut.Name = "lbl_salut"
-        Me.lbl_salut.Size = New System.Drawing.Size(787, 96)
-        Me.lbl_salut.TabIndex = 1
-        Me.lbl_salut.Text = resources.GetString("lbl_salut.Text")
-        '
-        'cb_manual
-        '
-        Me.cb_manual.AutoSize = True
-        Me.cb_manual.Font = New System.Drawing.Font("Comic Sans MS", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.cb_manual.Location = New System.Drawing.Point(80, 600)
-        Me.cb_manual.Name = "cb_manual"
-        Me.cb_manual.Size = New System.Drawing.Size(407, 28)
-        Me.cb_manual.TabIndex = 19
-        Me.cb_manual.Text = "J'ai lu le manuel et je suis prêt(e) pour le test."
-        Me.cb_manual.UseVisualStyleBackColor = True
-        '
-        'bt_voc
-        '
-        Me.bt_voc.BackColor = System.Drawing.Color.White
-        Me.bt_voc.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.bt_voc.Image = Global.ProjetNF22.My.Resources.Resources.parleur1
-        Me.bt_voc.Location = New System.Drawing.Point(408, 63)
-        Me.bt_voc.Name = "bt_voc"
-        Me.bt_voc.Size = New System.Drawing.Size(60, 60)
-        Me.bt_voc.TabIndex = 14
-        Me.bt_voc.UseVisualStyleBackColor = False
-        '
-        'cmd_finaliser
-        '
-        Me.cmd_finaliser.BackColor = System.Drawing.Color.White
-        Me.cmd_finaliser.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.cmd_finaliser.Image = Global.ProjetNF22.My.Resources.Resources.terminer
-        Me.cmd_finaliser.Location = New System.Drawing.Point(511, 164)
-        Me.cmd_finaliser.Name = "cmd_finaliser"
-        Me.cmd_finaliser.Size = New System.Drawing.Size(67, 68)
-        Me.cmd_finaliser.TabIndex = 18
-        Me.cmd_finaliser.TextAlign = System.Drawing.ContentAlignment.BottomCenter
-        Me.cmd_finaliser.UseVisualStyleBackColor = False
         '
         'cmd_Back
         '
@@ -276,13 +255,34 @@ Partial Class Manuel
         Me.cmd_quitter.TextAlign = System.Drawing.ContentAlignment.BottomCenter
         Me.cmd_quitter.UseVisualStyleBackColor = False
         '
+        'lbl_salut
+        '
+        Me.lbl_salut.AutoSize = True
+        Me.lbl_salut.Font = New System.Drawing.Font("Comic Sans MS", 10.2!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbl_salut.Location = New System.Drawing.Point(80, 75)
+        Me.lbl_salut.Name = "lbl_salut"
+        Me.lbl_salut.Size = New System.Drawing.Size(787, 96)
+        Me.lbl_salut.TabIndex = 1
+        Me.lbl_salut.Text = resources.GetString("lbl_salut.Text")
+        '
+        'cb_manual
+        '
+        Me.cb_manual.AutoSize = True
+        Me.cb_manual.Font = New System.Drawing.Font("Comic Sans MS", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.cb_manual.Location = New System.Drawing.Point(80, 600)
+        Me.cb_manual.Name = "cb_manual"
+        Me.cb_manual.Size = New System.Drawing.Size(407, 28)
+        Me.cb_manual.TabIndex = 19
+        Me.cb_manual.Text = "J'ai lu le manuel et je suis prêt(e) pour le test."
+        Me.cb_manual.UseVisualStyleBackColor = True
+        '
         'Manuel
         '
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit
         Me.AutoScroll = True
         Me.AutoSize = True
         Me.BackColor = System.Drawing.SystemColors.GradientActiveCaption
-        Me.ClientSize = New System.Drawing.Size(778, 768)
+        Me.ClientSize = New System.Drawing.Size(778, 669)
         Me.ControlBox = False
         Me.Controls.Add(Me.cb_manual)
         Me.Controls.Add(Me.lbl_salut)

@@ -8,15 +8,8 @@
     End Sub
 
     Private Sub TimerQ4_Tick(sender As Object, e As EventArgs) Handles TimerQ4.Tick
-        If minutes <> 0 Then
-            If secondes = 0 Then
-                minutes -= 1
-                secondes = 60
-                lbl_minQ4.Text = minutes
-            End If
-            secondes -= 1
-            lbl_secQ4.Text = secondes
-        End If
+        lbl_minQ4.Text = minutes
+        lbl_secQ4.Text = secondes
     End Sub
 
     'Code pour la Question 8
