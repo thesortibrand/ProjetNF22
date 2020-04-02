@@ -92,22 +92,10 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <Compile Include="Question10.Designer.vb">
-      <DependentUpon>Question10.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Question10.vb">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="Questions2.Designer.vb">
       <DependentUpon>Questions2.vb</DependentUpon>
     </Compile>
     <Compile Include="Questions2.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Question4.Designer.vb">
-      <DependentUpon>Question4.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Question4.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Accueil.vb">
@@ -115,30 +103,6 @@
     </Compile>
     <Compile Include="Accueil.Designer.vb">
       <DependentUpon>Accueil.vb</DependentUpon>
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Question1.Designer.vb">
-      <DependentUpon>Question1.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Question1.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Question2.Designer.vb">
-      <DependentUpon>Question2.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Question2.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Question3.Designer.vb">
-      <DependentUpon>Question3.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Question3.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Question5.Designer.vb">
-      <DependentUpon>Question5.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Question5.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Questions5.Designer.vb">
@@ -156,12 +120,6 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
-    </Compile>
-    <Compile Include="Question8.Designer.vb">
-      <DependentUpon>Question8.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Question8.vb">
-      <SubType>Form</SubType>
     </Compile>
     <Compile Include="Questions3.Designer.vb">
       <DependentUpon>Questions3.vb</DependentUpon>
@@ -198,32 +156,11 @@
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="Question1.resx">
-      <DependentUpon>Question1.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Question10.resx">
-      <DependentUpon>Question10.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Question2.resx">
-      <DependentUpon>Question2.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Question3.resx">
-      <DependentUpon>Question3.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Question4.resx">
-      <DependentUpon>Question4.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Question5.resx">
-      <DependentUpon>Question5.vb</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Questions5.resx">
       <DependentUpon>Questions5.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Questions2.resx">
       <DependentUpon>Questions2.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Question8.resx">
-      <DependentUpon>Question8.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Questions3.resx">
       <DependentUpon>Questions3.vb</DependentUpon>

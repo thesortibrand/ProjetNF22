@@ -109,6 +109,7 @@
         fichier.WriteLine(ari)
         fichier.WriteLine(lec)
         fichier.Close()
+        MsgBox("Les résulats ont été sauvegardés")
     End Sub
 
     Private Sub cmd_Quitter_Click(sender As Object, e As EventArgs) Handles cmd_quitter.Click
