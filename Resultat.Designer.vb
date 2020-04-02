@@ -56,6 +56,7 @@ Partial Class Resultat
         Me.cmd_enregistrer = New System.Windows.Forms.Button()
         Me.cmd_quitter = New System.Windows.Forms.Button()
         Me.Chart_Resultats = New System.Windows.Forms.DataVisualization.Charting.Chart()
+        Me.OpenFileDialog1 = New System.Windows.Forms.OpenFileDialog()
         Me.groupbox_categories.SuspendLayout()
         Me.GroupBox_duree.SuspendLayout()
         Me.gb_conseils.SuspendLayout()
@@ -68,7 +69,7 @@ Partial Class Resultat
         Me.lbl_score.Font = New System.Drawing.Font("Comic Sans MS", 13.8!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Underline), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lbl_score.Location = New System.Drawing.Point(50, 30)
         Me.lbl_score.Name = "lbl_score"
-        Me.lbl_score.Size = New System.Drawing.Size(153, 35)
+        Me.lbl_score.Size = New System.Drawing.Size(234, 51)
         Me.lbl_score.TabIndex = 0
         Me.lbl_score.Text = "Score Total"
         '
@@ -78,7 +79,7 @@ Partial Class Resultat
         Me.txtbox_score.Font = New System.Drawing.Font("Comic Sans MS", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtbox_score.Location = New System.Drawing.Point(75, 80)
         Me.txtbox_score.Name = "txtbox_score"
-        Me.txtbox_score.Size = New System.Drawing.Size(100, 31)
+        Me.txtbox_score.Size = New System.Drawing.Size(100, 45)
         Me.txtbox_score.TabIndex = 1
         Me.txtbox_score.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
@@ -88,7 +89,7 @@ Partial Class Resultat
         Me.lbl_10.Font = New System.Drawing.Font("Comic Sans MS", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lbl_10.Location = New System.Drawing.Point(195, 85)
         Me.lbl_10.Name = "lbl_10"
-        Me.lbl_10.Size = New System.Drawing.Size(42, 24)
+        Me.lbl_10.Size = New System.Drawing.Size(69, 39)
         Me.lbl_10.TabIndex = 2
         Me.lbl_10.Text = "/ 10"
         '
@@ -118,7 +119,7 @@ Partial Class Resultat
         Me.lbl_lec.AutoSize = True
         Me.lbl_lec.Location = New System.Drawing.Point(30, 270)
         Me.lbl_lec.Name = "lbl_lec"
-        Me.lbl_lec.Size = New System.Drawing.Size(106, 19)
+        Me.lbl_lec.Size = New System.Drawing.Size(154, 29)
         Me.lbl_lec.TabIndex = 14
         Me.lbl_lec.Text = "Lecture Heure"
         '
@@ -127,7 +128,7 @@ Partial Class Resultat
         Me.txtbox_ponc.Enabled = False
         Me.txtbox_ponc.Location = New System.Drawing.Point(150, 150)
         Me.txtbox_ponc.Name = "txtbox_ponc"
-        Me.txtbox_ponc.Size = New System.Drawing.Size(55, 26)
+        Me.txtbox_ponc.Size = New System.Drawing.Size(55, 36)
         Me.txtbox_ponc.TabIndex = 10
         Me.txtbox_ponc.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
@@ -136,7 +137,7 @@ Partial Class Resultat
         Me.lbl_ponct.AutoSize = True
         Me.lbl_ponct.Location = New System.Drawing.Point(30, 150)
         Me.lbl_ponct.Name = "lbl_ponct"
-        Me.lbl_ponct.Size = New System.Drawing.Size(83, 19)
+        Me.lbl_ponct.Size = New System.Drawing.Size(127, 29)
         Me.lbl_ponct.TabIndex = 9
         Me.lbl_ponct.Text = "Ponctuation"
         '
@@ -146,7 +147,7 @@ Partial Class Resultat
         Me.lbl_français.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lbl_français.Location = New System.Drawing.Point(30, 30)
         Me.lbl_français.Name = "lbl_français"
-        Me.lbl_français.Size = New System.Drawing.Size(70, 17)
+        Me.lbl_français.Size = New System.Drawing.Size(103, 25)
         Me.lbl_français.TabIndex = 4
         Me.lbl_français.Text = "Français"
         '
@@ -155,7 +156,7 @@ Partial Class Resultat
         Me.txtbox_lec.Enabled = False
         Me.txtbox_lec.Location = New System.Drawing.Point(150, 270)
         Me.txtbox_lec.Name = "txtbox_lec"
-        Me.txtbox_lec.Size = New System.Drawing.Size(55, 26)
+        Me.txtbox_lec.Size = New System.Drawing.Size(55, 36)
         Me.txtbox_lec.TabIndex = 15
         Me.txtbox_lec.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
@@ -164,7 +165,7 @@ Partial Class Resultat
         Me.txtbox_ari.Enabled = False
         Me.txtbox_ari.Location = New System.Drawing.Point(150, 230)
         Me.txtbox_ari.Name = "txtbox_ari"
-        Me.txtbox_ari.Size = New System.Drawing.Size(55, 26)
+        Me.txtbox_ari.Size = New System.Drawing.Size(55, 36)
         Me.txtbox_ari.TabIndex = 13
         Me.txtbox_ari.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
@@ -173,7 +174,7 @@ Partial Class Resultat
         Me.txtbox_voc.Enabled = False
         Me.txtbox_voc.Location = New System.Drawing.Point(150, 110)
         Me.txtbox_voc.Name = "txtbox_voc"
-        Me.txtbox_voc.Size = New System.Drawing.Size(55, 26)
+        Me.txtbox_voc.Size = New System.Drawing.Size(55, 36)
         Me.txtbox_voc.TabIndex = 8
         Me.txtbox_voc.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
@@ -182,7 +183,7 @@ Partial Class Resultat
         Me.txtbox_gram.Enabled = False
         Me.txtbox_gram.Location = New System.Drawing.Point(150, 70)
         Me.txtbox_gram.Name = "txtbox_gram"
-        Me.txtbox_gram.Size = New System.Drawing.Size(55, 26)
+        Me.txtbox_gram.Size = New System.Drawing.Size(55, 36)
         Me.txtbox_gram.TabIndex = 6
         Me.txtbox_gram.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
@@ -191,7 +192,7 @@ Partial Class Resultat
         Me.lbl_ari.AutoSize = True
         Me.lbl_ari.Location = New System.Drawing.Point(30, 230)
         Me.lbl_ari.Name = "lbl_ari"
-        Me.lbl_ari.Size = New System.Drawing.Size(95, 19)
+        Me.lbl_ari.Size = New System.Drawing.Size(142, 29)
         Me.lbl_ari.TabIndex = 12
         Me.lbl_ari.Text = "Arithmétique"
         '
@@ -201,7 +202,7 @@ Partial Class Resultat
         Me.lbl_math.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lbl_math.Location = New System.Drawing.Point(30, 200)
         Me.lbl_math.Name = "lbl_math"
-        Me.lbl_math.Size = New System.Drawing.Size(43, 17)
+        Me.lbl_math.Size = New System.Drawing.Size(64, 25)
         Me.lbl_math.TabIndex = 11
         Me.lbl_math.Text = "Math"
         '
@@ -210,7 +211,7 @@ Partial Class Resultat
         Me.lbl_voc.AutoSize = True
         Me.lbl_voc.Location = New System.Drawing.Point(30, 110)
         Me.lbl_voc.Name = "lbl_voc"
-        Me.lbl_voc.Size = New System.Drawing.Size(84, 19)
+        Me.lbl_voc.Size = New System.Drawing.Size(127, 29)
         Me.lbl_voc.TabIndex = 7
         Me.lbl_voc.Text = "Vocabulaire"
         '
@@ -219,7 +220,7 @@ Partial Class Resultat
         Me.lbl_gram.AutoSize = True
         Me.lbl_gram.Location = New System.Drawing.Point(30, 70)
         Me.lbl_gram.Name = "lbl_gram"
-        Me.lbl_gram.Size = New System.Drawing.Size(81, 19)
+        Me.lbl_gram.Size = New System.Drawing.Size(118, 29)
         Me.lbl_gram.TabIndex = 5
         Me.lbl_gram.Text = "Grammaire"
         '
@@ -230,7 +231,7 @@ Partial Class Resultat
         Me.lbl_minRes.Location = New System.Drawing.Point(23, 33)
         Me.lbl_minRes.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.lbl_minRes.Name = "lbl_minRes"
-        Me.lbl_minRes.Size = New System.Drawing.Size(0, 28)
+        Me.lbl_minRes.Size = New System.Drawing.Size(0, 45)
         Me.lbl_minRes.TabIndex = 17
         '
         'lbl_deuxptsRes
@@ -240,7 +241,7 @@ Partial Class Resultat
         Me.lbl_deuxptsRes.Location = New System.Drawing.Point(59, 33)
         Me.lbl_deuxptsRes.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.lbl_deuxptsRes.Name = "lbl_deuxptsRes"
-        Me.lbl_deuxptsRes.Size = New System.Drawing.Size(18, 28)
+        Me.lbl_deuxptsRes.Size = New System.Drawing.Size(30, 45)
         Me.lbl_deuxptsRes.TabIndex = 18
         Me.lbl_deuxptsRes.Text = ":"
         '
@@ -251,7 +252,7 @@ Partial Class Resultat
         Me.lbl_secRes.Location = New System.Drawing.Point(90, 33)
         Me.lbl_secRes.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.lbl_secRes.Name = "lbl_secRes"
-        Me.lbl_secRes.Size = New System.Drawing.Size(0, 28)
+        Me.lbl_secRes.Size = New System.Drawing.Size(0, 45)
         Me.lbl_secRes.TabIndex = 19
         '
         'GroupBox_duree
@@ -379,15 +380,19 @@ Partial Class Resultat
         Me.Chart_Resultats.Name = "Chart_Resultats"
         Series1.ChartArea = "ChartArea1"
         Series1.Legend = "Legend1"
-        Series1.Name = "Series1"
+        Series1.Name = "Nouveaux résultats"
         Series2.ChartArea = "ChartArea1"
         Series2.Legend = "Legend1"
-        Series2.Name = "Series2"
+        Series2.Name = "Résultats précédents"
         Me.Chart_Resultats.Series.Add(Series1)
         Me.Chart_Resultats.Series.Add(Series2)
-        Me.Chart_Resultats.Size = New System.Drawing.Size(478, 256)
+        Me.Chart_Resultats.Size = New System.Drawing.Size(517, 256)
         Me.Chart_Resultats.TabIndex = 20
         Me.Chart_Resultats.Text = "Résultats"
+        '
+        'OpenFileDialog1
+        '
+        Me.OpenFileDialog1.FileName = "OpenFileDialog1"
         '
         'Resultat
         '
@@ -450,4 +455,5 @@ Partial Class Resultat
     Friend WithEvents bt_ponc As Button
     Friend WithEvents bt_voc As Button
     Friend WithEvents Chart_Resultats As DataVisualization.Charting.Chart
+    Friend WithEvents OpenFileDialog1 As OpenFileDialog
 End Class

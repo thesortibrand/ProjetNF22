@@ -5,7 +5,7 @@
 
     Private Sub Resultat_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         If minutes < 0 Then
-            MsgBox("Tu as dépassée 30 minutes le temps objectif de résolution")
+            MsgBox("Tu as dépassé 30 minutes le temps objectif de résolution")
             lbl_minRes.Text = 30
             lbl_secRes.Text = 0
         Else
@@ -28,11 +28,11 @@
         txtbox_lec.Text = lec & " %"
 
 
-        Me.Chart_Resultats.Series("Series1").Points.AddXY("Grammaire", gram)
-        Me.Chart_Resultats.Series("Series1").Points.AddXY("Vocabulaire", voc)
-        Me.Chart_Resultats.Series("Series1").Points.AddXY("Ponctuation", ponc)
-        Me.Chart_Resultats.Series("Series1").Points.AddXY("Arithmétique", ari)
-        Me.Chart_Resultats.Series("Series1").Points.AddXY("Horloge", lec)
+        Me.Chart_Resultats.Series("Nouveaux résultats").Points.AddXY("Grammaire", gram)
+        Me.Chart_Resultats.Series("Nouveaux résultats").Points.AddXY("Vocabulaire", voc)
+        Me.Chart_Resultats.Series("Nouveaux résultats").Points.AddXY("Ponctuation", ponc)
+        Me.Chart_Resultats.Series("Nouveaux résultats").Points.AddXY("Arithmétique", ari)
+        Me.Chart_Resultats.Series("Nouveaux résultats").Points.AddXY("Horloge", lec)
 
         If ((n_ari / 4) * 100) <> 100 Then
             bt_ari.Enabled = True
@@ -55,7 +55,14 @@
         End If
 
         'Code pour lire des résultats enregistrés avant
-        FileOpen(1, "C:\Users\utcpret\Desktop\NF22\ProjetNF22\Resources\resultats.txt", OpenMode.Input)
+        OpenFileDialog1.ShowDialog()
+        With OpenFileDialog1
+            .Title = "Ouvrir" 'Titre de la barre de titre
+            .Filter = "Fichiers txt|*.txt" ' on travaille uniquement sur les .txt
+            .Multiselect = False 'sélectionner 1 seul fichier
+        End With
+
+        FileOpen(1, OpenFileDialog1.FileName, OpenMode.Input)
         i = 0
         Do While Not EOF(1)
             Input(1, resultats_enregistres(i))
@@ -63,11 +70,11 @@
         Loop
         FileClose(1)
 
-        Me.Chart_Resultats.Series("Series2").Points.AddXY("Grammaire", resultats_enregistres(0))
-        Me.Chart_Resultats.Series("Series2").Points.AddXY("Vocabulaire", resultats_enregistres(1))
-        Me.Chart_Resultats.Series("Series2").Points.AddXY("Ponctuation", resultats_enregistres(2))
-        Me.Chart_Resultats.Series("Series2").Points.AddXY("Arithmétique", resultats_enregistres(3))
-        Me.Chart_Resultats.Series("Series2").Points.AddXY("Horloge", resultats_enregistres(4))
+        Me.Chart_Resultats.Series("Résultats précédents").Points.AddXY("Grammaire", resultats_enregistres(0))
+        Me.Chart_Resultats.Series("Résultats précédents").Points.AddXY("Vocabulaire", resultats_enregistres(1))
+        Me.Chart_Resultats.Series("Résultats précédents").Points.AddXY("Ponctuation", resultats_enregistres(2))
+        Me.Chart_Resultats.Series("Résultats précédents").Points.AddXY("Arithmétique", resultats_enregistres(3))
+        Me.Chart_Resultats.Series("Résultats précédents").Points.AddXY("Horloge", resultats_enregistres(4))
 
     End Sub
 
@@ -102,7 +109,7 @@
         Dim obj As Object
         Dim fichier As Object
         obj = CreateObject("Scripting.FileSystemObject")
-        fichier = obj.CreateTextFile("C:\Users\utcpret\Desktop\NF22\ProjetNF22\Resources\resultats.txt")
+        fichier = obj.CreateTextFile(OpenFileDialog1.FileName)
         fichier.WriteLine(gram)
         fichier.WriteLine(voc)
         fichier.WriteLine(ponc)

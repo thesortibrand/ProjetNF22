@@ -55,7 +55,7 @@
     End Sub
 
     Private Sub cmd_aideQ10_Click(sender As Object, e As EventArgs) Handles cmd_aideQ10.Click
-        MsgBox("Appuies et maintiens le click sur l'image que tu considères comme la bonne réponse, puis faites-la glisser vers la boîte vide pour la remplir")
+        MsgBox("Appuie et maintiens le click sur l'image que tu considères comme la bonne réponse, puis fais-la glisser vers la boîte vide pour la remplir")
     End Sub
 
     Private Sub cmd_Next_Click(sender As Object, e As EventArgs) Handles cmd_Next.Click

@@ -36,19 +36,19 @@
 
     'Code des boutons: Instruction 
     Private Sub cmd_aideQ6_Click(sender As Object, e As EventArgs) Handles cmd_aideQ6.Click
-        MsgBox("Cliques sur un des nombres de ton choix en faisant défiler la bar")
+        MsgBox("Clique sur un des nombres de ton choix en faisant défiler la bar")
     End Sub
 
     Private Sub cmd_aideQ7_Click(sender As Object, e As EventArgs) Handles cmd_aideQ7.Click
-        MsgBox("Cliques sur la flèche à côté de la date et selectionne la date de ton choix sur le calendrier qui s'affiche")
+        MsgBox("Clique sur la flèche à côté de la date et selectionne la date de ton choix sur le calendrier qui s'affiche")
     End Sub
 
     Private Sub cmd_aideQ8_Click(sender As Object, e As EventArgs) Handles cmd_aideQ8.Click
-        MsgBox("Cliques sur un image pour choisir la bonne réponse")
+        MsgBox("Clique sur un image pour choisir la bonne réponse")
     End Sub
 
     Private Sub cmd_aideQ9_Click(sender As Object, e As EventArgs) Handles cmd_aideQ9.Click
-        MsgBox("Cliques sur les chiffres pour choisir la bonne composition")
+        MsgBox("Clique sur les chiffres pour choisir la bonne composition")
     End Sub
 
     Private Sub cmd_Next_Click(sender As Object, e As EventArgs) Handles cmd_Next.Click
@@ -62,7 +62,7 @@
             Else
                 'If pour verifier que une réponse existe dans Question 9
                 If lbl_30000.BorderStyle = BorderStyle.None And lbl_30.BorderStyle = BorderStyle.None And lbl_7.BorderStyle = BorderStyle.None And lbl_700.BorderStyle = BorderStyle.None And lbl_7000.BorderStyle = BorderStyle.None And lbl_9.BorderStyle = BorderStyle.None Then
-                    MsgBox("Aucune chiffre de la Question 9 n'a été selectionnée")
+                    MsgBox("Aucun chiffre de la Question 9 n'a été selectionnée")
                 Else
                     'If pour garder la réponse de Question 6
                     If lb_Q6.SelectedIndex = 1 Then

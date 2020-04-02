@@ -53,7 +53,7 @@ Partial Class Manuel
         Me.lbl_bienvenue.Font = New System.Drawing.Font("Comic Sans MS", 13.8!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Underline), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lbl_bienvenue.Location = New System.Drawing.Point(50, 30)
         Me.lbl_bienvenue.Name = "lbl_bienvenue"
-        Me.lbl_bienvenue.Size = New System.Drawing.Size(168, 35)
+        Me.lbl_bienvenue.Size = New System.Drawing.Size(255, 51)
         Me.lbl_bienvenue.TabIndex = 0
         Me.lbl_bienvenue.Text = "BIENVENUE!"
         '
@@ -76,38 +76,37 @@ Partial Class Manuel
         'lbl_pt3
         '
         Me.lbl_pt3.AutoSize = True
-        Me.lbl_pt3.Location = New System.Drawing.Point(50, 80)
+        Me.lbl_pt3.Location = New System.Drawing.Point(50, 81)
         Me.lbl_pt3.Name = "lbl_pt3"
-        Me.lbl_pt3.Size = New System.Drawing.Size(635, 48)
+        Me.lbl_pt3.Size = New System.Drawing.Size(1012, 78)
         Me.lbl_pt3.TabIndex = 8
-        Me.lbl_pt3.Text = "Termines le test et cliques sur: Enregistrer Résultats, pour les comparer avec" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "t" &
-    "es résultats antérieurs de différentes tentatives si ce n'est pas la première." & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) &
-    ""
+        Me.lbl_pt3.Text = "Termine le test et clique sur ""Enregistrer Résultats"" pour les comparer avec" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "tes" &
+    " résultats antérieurs obtenus si ce n'est pas la première fois. " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
         '
         'lbl_pt2
         '
         Me.lbl_pt2.AutoSize = True
-        Me.lbl_pt2.Location = New System.Drawing.Point(50, 50)
+        Me.lbl_pt2.Location = New System.Drawing.Point(50, 49)
         Me.lbl_pt2.Name = "lbl_pt2"
-        Me.lbl_pt2.Size = New System.Drawing.Size(574, 24)
+        Me.lbl_pt2.Size = New System.Drawing.Size(961, 39)
         Me.lbl_pt2.TabIndex = 6
-        Me.lbl_pt2.Text = "Réponds les questions et cliques sur: Instruction si tu as besoin d'aide."
+        Me.lbl_pt2.Text = "Réponds aux questions et cliques sur ""Instruction"" si tu as besoin d'aide."
         '
         'lbl_pt1
         '
         Me.lbl_pt1.AutoSize = True
         Me.lbl_pt1.Location = New System.Drawing.Point(50, 20)
         Me.lbl_pt1.Name = "lbl_pt1"
-        Me.lbl_pt1.Size = New System.Drawing.Size(628, 48)
+        Me.lbl_pt1.Size = New System.Drawing.Size(979, 78)
         Me.lbl_pt1.TabIndex = 4
-        Me.lbl_pt1.Text = "Dans la fenêtre de: Accueil, cliques sur le bouton vert pour démarrer le test." & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
+        Me.lbl_pt1.Text = "Dans la fenêtre ""Accueil"", clique sur le bouton vert pour démarrer le test." & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
         '
         'lbl_3
         '
         Me.lbl_3.AutoSize = True
         Me.lbl_3.Location = New System.Drawing.Point(20, 80)
         Me.lbl_3.Name = "lbl_3"
-        Me.lbl_3.Size = New System.Drawing.Size(26, 24)
+        Me.lbl_3.Size = New System.Drawing.Size(44, 39)
         Me.lbl_3.TabIndex = 7
         Me.lbl_3.Text = "3)"
         '
@@ -116,7 +115,7 @@ Partial Class Manuel
         Me.lbl_2.AutoSize = True
         Me.lbl_2.Location = New System.Drawing.Point(20, 50)
         Me.lbl_2.Name = "lbl_2"
-        Me.lbl_2.Size = New System.Drawing.Size(26, 24)
+        Me.lbl_2.Size = New System.Drawing.Size(44, 39)
         Me.lbl_2.TabIndex = 5
         Me.lbl_2.Text = "2)"
         '
@@ -125,7 +124,7 @@ Partial Class Manuel
         Me.lbl_1.AutoSize = True
         Me.lbl_1.Location = New System.Drawing.Point(20, 20)
         Me.lbl_1.Name = "lbl_1"
-        Me.lbl_1.Size = New System.Drawing.Size(24, 24)
+        Me.lbl_1.Size = New System.Drawing.Size(40, 39)
         Me.lbl_1.TabIndex = 3
         Me.lbl_1.Text = "1)"
         '
@@ -177,9 +176,9 @@ Partial Class Manuel
         Me.lbl_cliques.AutoSize = True
         Me.lbl_cliques.Location = New System.Drawing.Point(20, 20)
         Me.lbl_cliques.Name = "lbl_cliques"
-        Me.lbl_cliques.Size = New System.Drawing.Size(437, 24)
+        Me.lbl_cliques.Size = New System.Drawing.Size(696, 39)
         Me.lbl_cliques.TabIndex = 10
-        Me.lbl_cliques.Text = "Cliques sur chaque bouton pour connaître sa fonction."
+        Me.lbl_cliques.Text = "Clique sur chaque bouton pour connaître sa fonction."
         '
         'cmd_finaliser
         '
@@ -261,7 +260,7 @@ Partial Class Manuel
         Me.lbl_salut.Font = New System.Drawing.Font("Comic Sans MS", 10.2!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lbl_salut.Location = New System.Drawing.Point(80, 75)
         Me.lbl_salut.Name = "lbl_salut"
-        Me.lbl_salut.Size = New System.Drawing.Size(787, 96)
+        Me.lbl_salut.Size = New System.Drawing.Size(1292, 156)
         Me.lbl_salut.TabIndex = 1
         Me.lbl_salut.Text = resources.GetString("lbl_salut.Text")
         '
@@ -271,7 +270,7 @@ Partial Class Manuel
         Me.cb_manual.Font = New System.Drawing.Font("Comic Sans MS", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cb_manual.Location = New System.Drawing.Point(80, 600)
         Me.cb_manual.Name = "cb_manual"
-        Me.cb_manual.Size = New System.Drawing.Size(407, 28)
+        Me.cb_manual.Size = New System.Drawing.Size(655, 43)
         Me.cb_manual.TabIndex = 19
         Me.cb_manual.Text = "J'ai lu le manuel et je suis prêt(e) pour le test."
         Me.cb_manual.UseVisualStyleBackColor = True
@@ -282,7 +281,7 @@ Partial Class Manuel
         Me.AutoScroll = True
         Me.AutoSize = True
         Me.BackColor = System.Drawing.SystemColors.GradientActiveCaption
-        Me.ClientSize = New System.Drawing.Size(778, 669)
+        Me.ClientSize = New System.Drawing.Size(1083, 808)
         Me.ControlBox = False
         Me.Controls.Add(Me.cb_manual)
         Me.Controls.Add(Me.lbl_salut)
