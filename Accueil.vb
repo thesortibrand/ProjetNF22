@@ -23,4 +23,5 @@
     Private Sub cmd_Quitter_Click(sender As Object, e As EventArgs) Handles cmd_quitter.Click
         End
     End Sub
+
 End Class

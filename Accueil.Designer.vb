@@ -40,7 +40,7 @@ Partial Class Accueil
         Me.lbl_evaluation.Location = New System.Drawing.Point(210, 20)
         Me.lbl_evaluation.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.lbl_evaluation.Name = "lbl_evaluation"
-        Me.lbl_evaluation.Size = New System.Drawing.Size(247, 45)
+        Me.lbl_evaluation.Size = New System.Drawing.Size(398, 74)
         Me.lbl_evaluation.TabIndex = 0
         Me.lbl_evaluation.Text = "EVALUATION"
         '
@@ -52,7 +52,7 @@ Partial Class Accueil
         Me.lbl_niveau.Location = New System.Drawing.Point(250, 60)
         Me.lbl_niveau.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.lbl_niveau.Name = "lbl_niveau"
-        Me.lbl_niveau.Size = New System.Drawing.Size(164, 39)
+        Me.lbl_niveau.Size = New System.Drawing.Size(259, 62)
         Me.lbl_niveau.TabIndex = 1
         Me.lbl_niveau.Text = "Niveau CE2"
         '
@@ -79,7 +79,7 @@ Partial Class Accueil
         Me.lbl_explicationtest.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.lbl_explicationtest.Name = "lbl_explicationtest"
         Me.lbl_explicationtest.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.lbl_explicationtest.Size = New System.Drawing.Size(466, 48)
+        Me.lbl_explicationtest.Size = New System.Drawing.Size(759, 78)
         Me.lbl_explicationtest.TabIndex = 4
         Me.lbl_explicationtest.Text = "Cette évaluation comprend 10 questions : " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "5 questions de français et 5 questions" &
     " de mathématiques."
@@ -121,9 +121,9 @@ Partial Class Accueil
         Me.lbl_nouveau.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.lbl_nouveau.Name = "lbl_nouveau"
         Me.lbl_nouveau.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.lbl_nouveau.Size = New System.Drawing.Size(177, 48)
+        Me.lbl_nouveau.Size = New System.Drawing.Size(275, 78)
         Me.lbl_nouveau.TabIndex = 2
-        Me.lbl_nouveau.Text = "Nouvel utilisateur?" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Cliques sur ""Manuel""."
+        Me.lbl_nouveau.Text = "Nouvel utilisateur?" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Clique sur ""Manuel""."
         Me.lbl_nouveau.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
         'Accueil

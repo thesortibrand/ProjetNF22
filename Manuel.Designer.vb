@@ -88,9 +88,9 @@ Partial Class Manuel
         Me.lbl_pt2.AutoSize = True
         Me.lbl_pt2.Location = New System.Drawing.Point(50, 49)
         Me.lbl_pt2.Name = "lbl_pt2"
-        Me.lbl_pt2.Size = New System.Drawing.Size(961, 39)
+        Me.lbl_pt2.Size = New System.Drawing.Size(947, 39)
         Me.lbl_pt2.TabIndex = 6
-        Me.lbl_pt2.Text = "Réponds aux questions et cliques sur ""Instruction"" si tu as besoin d'aide."
+        Me.lbl_pt2.Text = "Réponds aux questions et clique sur ""Instruction"" si tu as besoin d'aide."
         '
         'lbl_pt1
         '

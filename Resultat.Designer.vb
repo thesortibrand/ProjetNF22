@@ -374,6 +374,7 @@ Partial Class Resultat
         '
         ChartArea1.Name = "ChartArea1"
         Me.Chart_Resultats.ChartAreas.Add(ChartArea1)
+        Me.Chart_Resultats.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.ProjetNF22.My.MySettings.Default, "nline", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
         Legend1.Name = "Legend1"
         Me.Chart_Resultats.Legends.Add(Legend1)
         Me.Chart_Resultats.Location = New System.Drawing.Point(376, 140)
@@ -388,7 +389,7 @@ Partial Class Resultat
         Me.Chart_Resultats.Series.Add(Series2)
         Me.Chart_Resultats.Size = New System.Drawing.Size(517, 256)
         Me.Chart_Resultats.TabIndex = 20
-        Me.Chart_Resultats.Text = "Résultats"
+        Me.Chart_Resultats.Text = Global.ProjetNF22.My.MySettings.Default.nline
         '
         'OpenFileDialog1
         '
