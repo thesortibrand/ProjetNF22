@@ -63,6 +63,7 @@
         End With
 
         FileOpen(1, OpenFileDialog1.FileName, OpenMode.Input)
+        i = 0
         Do While Not EOF(1)
             Input(1, resultats_enregistres(i))
             i = i + 1
